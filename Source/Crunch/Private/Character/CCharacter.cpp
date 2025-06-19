@@ -3,13 +3,17 @@
 
 #include "CCharacter.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "GAS/CAbilitySystemComponent.h"
+#include "GAS/CAttributeSet.h"
 
 // Sets default values
 ACCharacter::ACCharacter()
 {
-	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	CAbilitySystemComponent = CreateDefaultSubobject<UCAbilitySystemComponent>("CAbilitySystemComponent");
+	CAttributeSet = CreateDefaultSubobject<UCAttributeSet>("CAttributeSet");	
 }
 
 // Called when the game starts or when spawned
@@ -17,6 +21,11 @@ void ACCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+}
+
+UAbilitySystemComponent* ACCharacter::GetAbilitySystemComponent() const
+{
+	return CAbilitySystemComponent;
 }
 
 // Called every frame
