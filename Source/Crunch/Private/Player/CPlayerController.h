@@ -13,4 +13,14 @@ UCLASS()
 class CRUNCH_API ACPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+public:
+	//called on server
+	void OnPossess(APawn* InPawn) override;
+
+	//called on client
+	void AcknowledgePossession(class APawn* P) override;
+
+private:
+	UPROPERTY()
+	class ACPlayerCharacter* CPlayerCharacter;
 };

@@ -14,7 +14,8 @@ class CRUNCH_API ACCharacter : public ACharacter, public IAbilitySystemInterface
 
 public:
 	ACCharacter();
-
+	void ServerSideInit();
+	void ClientSideInit();
 protected:
 	virtual void BeginPlay() override;
 
@@ -30,7 +31,7 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 private:
-	UPROPERTY()
+	UPROPERTY(VisibleDefaultsOnly, Category = "Gameplay Ability")
 	class UCAbilitySystemComponent* CAbilitySystemComponent;
 
 	UPROPERTY()
