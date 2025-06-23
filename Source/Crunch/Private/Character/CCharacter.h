@@ -16,6 +16,9 @@ public:
 	ACCharacter();
 	void ServerSideInit();
 	void ClientSideInit();
+	bool IsLocallyControlledByPlayer();
+	//only called on server
+	virtual void PossessedBy(AController* NewController) override;
 protected:
 	virtual void BeginPlay() override;
 
@@ -36,5 +39,20 @@ private:
 
 	UPROPERTY()
 	class UCAttributeSet* CAttributeSet;
-	
+
+
+	/**************************************************************/
+	/*						Gameplay UI     					  */
+	/**************************************************************/
+	UPROPERTY(VisibleDefaultsOnly, Category = "Gameplay Ability")
+	class UWidgetComponent* OverHeadWidgetComponent;
+	void ConfigureOverHeadStatusWidget();
+
+	UPROPERTY(EditDefaultsOnly, Category="UI")
+	float HeadStatGaugeVisibilityCheckUpdateGap = 1.f;
+
+	UPROPERTY(EditDefaultsOnly, Category="UI")
+	float HeadStatGaugeVisibilityRangeSquared = 10000000.f;
+	FTimerHandle HeadStatsGaugeVisibilityUpdateTimerHandle;
+	void UpdateHeadGaugeVisibility();
 };
