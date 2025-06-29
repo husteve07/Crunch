@@ -3,6 +3,8 @@
 
 #include "GA_Combo.h"
 #include "Abilities/Tasks/AbilityTask_PlayMontageAndWait.h"
+#include "Abilities/Tasks/AbilityTask_WaitGameplayEvent.h"
+#include "GameplayTagsManager.h"
 #include "GAS/UCAbilitySystemStatics.h"
 
 UGA_Combo::UGA_Combo()
@@ -28,8 +30,42 @@ void UGA_Combo::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const F
 		PlayComboMontageTask->OnCompleted.AddDynamic(this, &UGA_Combo::K2_EndAbility);
 		PlayComboMontageTask->OnInterrupted.AddDynamic(this, &UGA_Combo::K2_EndAbility);
 		PlayComboMontageTask->ReadyForActivation();
+
+		UAbilityTask_WaitGameplayEvent* WaitComboChangeEventTask = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, GetComboChangeEventTag(), nullptr, false, false);
+		WaitComboChangeEventTask->EventReceived.AddDynamic(this, &UGA_Combo::ComboChangedEventReceived);
+		WaitComboChangeEventTask->ReadyForActivation();
+	
 	}
 
 	
 	
+}
+
+FGameplayTag UGA_Combo::GetComboChangeEventTag()
+{
+	return FGameplayTag::RequestGameplayTag("ability.combo.change");
+}
+
+FGameplayTag UGA_Combo::GetComboChangeEventEndTag()
+{
+	return FGameplayTag::RequestGameplayTag("ability.combo.end");
+}
+
+void UGA_Combo::ComboChangedEventReceived(FGameplayEventData Data)
+{
+	FGameplayTag EventTag = Data.EventTag;
+
+	if (EventTag == GetComboChangeEventEndTag())
+	{
+		NextComboName  = NAME_None;
+		UE_LOG(LogTemp, Warning, TEXT("NExt combo is cleared"));
+
+		return;
+	}
+
+	TArray<FName> TagNames;
+	UGameplayTagsManager::Get().SplitGameplayTagFName(EventTag, TagNames);
+	NextComboName = TagNames.Last();
+
+	UE_LOG(LogTemp, Warning, TEXT("NExt combot is now : %s"), *NextComboName.ToString());
 }
