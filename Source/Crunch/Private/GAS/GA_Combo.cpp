@@ -74,7 +74,10 @@ void UGA_Combo::TryCommitCombo()
 
 	UAnimInstance* OwnerAnimInstance = GetOwnerAnimInstance();
 	if (!OwnerAnimInstance)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("OwnerAnimInstance is null"));		
 		return;
+	}
 
 	OwnerAnimInstance->Montage_SetNextSection(OwnerAnimInstance->Montage_GetCurrentSection(ComboMontage), NextComboName, ComboMontage);
 }
@@ -95,5 +98,5 @@ void UGA_Combo::ComboChangedEventReceived(FGameplayEventData Data)
 	UGameplayTagsManager::Get().SplitGameplayTagFName(EventTag, TagNames);
 	NextComboName = TagNames.Last();
 
-	UE_LOG(LogTemp, Warning, TEXT("NExt combot is now : %s"), *NextComboName.ToString());
+	UE_LOG(LogTemp, Warning, TEXT("NExt combo is now : %s"), *NextComboName.ToString());
 }
