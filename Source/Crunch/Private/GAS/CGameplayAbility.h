@@ -6,6 +6,9 @@
 #include "Abilities/GameplayAbility.h"
 #include "CGameplayAbility.generated.h"
 
+
+class UAnimInstance;
+
 /**
  * 
  */
@@ -13,4 +16,6 @@ UCLASS()
 class CRUNCH_API UCGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
+protected:
+	UAnimInstance* GetOwnerAnimInstance() const;
 };
