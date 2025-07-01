@@ -18,12 +18,16 @@ public:
 	virtual void ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData) override;
 	static FGameplayTag GetComboChangeEventTag();
 	static FGameplayTag GetComboChangeEventEndTag();
+	static FGameplayTag GetComboTargetEventTag();
 private:
 	void SetupWaitComboInputPress();
 
 	UFUNCTION()
 	void HandleInputPress(float TimeWaited);
 
+	UFUNCTION()
+	void DoDamage(FGameplayEventData Data);
+	
 	void TryCommitCombo();
 	
 	UPROPERTY(EditDefaultsOnly, Category="Animation")
@@ -35,3 +39,6 @@ private:
 	FName NextComboName;
 	
 };
+
+
+
