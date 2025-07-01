@@ -20,6 +20,7 @@ TArray<FHitResult> UCGameplayAbility::GetHitResultFromSweepLocationTargetData(
 	bool bIgnoreSelf) const
 {
 	TArray<FHitResult> OutResults;
+	TSet<AActor*> HitActors;
 
 	for (const TSharedPtr<FGameplayAbilityTargetData> TargetData : TargetDataHandle.Data)
 	{
@@ -40,6 +41,15 @@ TArray<FHitResult> UCGameplayAbility::GetHitResultFromSweepLocationTargetData(
 		TArray<FHitResult> Results;
 		
 		UKismetSystemLibrary::SphereTraceMultiForObjects(this, StartLoc, EndLoc, SphereSweepRadius, ObjectTypes, false, ActorsToIgnore, DrawDebugTrace, Results, false);
+
+		for (const FHitResult& Result : Results)
+		{
+			if (HitActors.Contains(Result.GetActor()))
+				continue;
+
+			HitActors.Add(Result.GetActor());
+			OutResults.Add(Result);
+		}
 	}
 
 	return OutResults;
