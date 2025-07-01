@@ -12,7 +12,7 @@ void UAN_SentTargetGroup::Notify(USkeletalMeshComponent* MeshComp, UAnimSequence
 		return;
 	if (TargetSocketNames.Num() <= 1)
 		return;
-	if (!MeshComp()->GetOwner() || !UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(MeshComp->GetOwner()))
+	if (!MeshComp->GetOwner() || !UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(MeshComp->GetOwner()))
 		return;
 
 	FGameplayEventData Data;
