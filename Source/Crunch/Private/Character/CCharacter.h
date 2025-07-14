@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
+#include "GameplayTagContainer.h"
 #include "CCharacter.generated.h"
 
 UCLASS()
@@ -34,6 +35,9 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 private:
+	void BindGASChangeDelegates();
+	void DeathTagUpdated(const FGameplayTag Tag, int32 NewCount);
+	
 	UPROPERTY(VisibleDefaultsOnly, Category = "Gameplay Ability")
 	class UCAbilitySystemComponent* CAbilitySystemComponent;
 
@@ -55,4 +59,20 @@ private:
 	float HeadStatGaugeVisibilityRangeSquared = 10000000.f;
 	FTimerHandle HeadStatsGaugeVisibilityUpdateTimerHandle;
 	void UpdateHeadGaugeVisibility();
+
+	void SetStatusGaugeEnabled(bool bEnabled);
+
+	/**************************************************************/
+	/*						Death And Respawn Ability    		  */
+	/**************************************************************/
+	UPROPERTY(EditDefaultsOnly, Category = "Death")
+	UAnimMontage* DeathMontage;
+
+	void PlayDeathAnimation();
+	
+	void StartDeathSequence();
+	void Respawn();
+
+	virtual void OnDead();
+	virtual void OnRespawn();
 };
