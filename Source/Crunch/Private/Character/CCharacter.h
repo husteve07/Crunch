@@ -6,10 +6,11 @@
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
 #include "GameplayTagContainer.h"
+#include "GenericTeamAgentInterface.h"
 #include "CCharacter.generated.h"
 
 UCLASS()
-class CRUNCH_API ACCharacter : public ACharacter, public IAbilitySystemInterface
+class CRUNCH_API ACCharacter : public ACharacter, public IAbilitySystemInterface, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
@@ -20,6 +21,8 @@ public:
 	bool IsLocallyControlledByPlayer();
 	//only called on server
 	virtual void PossessedBy(AController* NewController) override;
+	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
+	
 protected:
 	virtual void BeginPlay() override;
 
@@ -84,4 +87,15 @@ private:
 
 	virtual void OnDead();
 	virtual void OnRespawn();
+
+	/**************************************************************/
+	/*						Team Respawn			    		  */
+	/**************************************************************/
+public:
+	virtual void SetGenericTeamId(const FGenericTeamId& NewTeamID) override;
+
+	virtual FGenericTeamId GetGenericTeamId() const override;
+private:
+	UPROPERTY(Replicated)
+	FGenericTeamId TeamId;
 };
