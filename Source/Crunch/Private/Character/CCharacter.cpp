@@ -60,6 +60,7 @@ void ACCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	ConfigureOverHeadStatusWidget();
+	MeshRelativeTransform = GetMesh()->GetRelativeTransform();
 }
 
 UAbilitySystemComponent* ACCharacter::GetAbilitySystemComponent() const
@@ -140,9 +141,35 @@ void ACCharacter::SetStatusGaugeEnabled(bool bEnabled)
 	}
 }
 
+void ACCharacter::DeathMontageFinished()
+{
+	SetRagdollEnabled(true);
+}
+
+void ACCharacter::SetRagdollEnabled(bool bIsEnabled)
+{
+	if (bIsEnabled)
+	{
+		GetMesh()->DetachFromComponent(FDetachmentTransformRules::KeepWorldTransform);
+		GetMesh()->SetSimulatePhysics(true);
+		GetMesh()->SetCollisionEnabled(ECollisionEnabled::PhysicsOnly);
+	}
+	else
+	{
+		GetMesh()->SetSimulatePhysics(false);
+		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		GetMesh()->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepWorldTransform);
+		GetMesh()->SetRelativeTransform(MeshRelativeTransform);
+	}
+}
+
 void ACCharacter::PlayDeathAnimation()
 {
-	PlayAnimMontage(DeathMontage);
+	if (DeathMontage)
+	{
+		float MontageDuration  = PlayAnimMontage(DeathMontage);
+		GetWorldTimerManager().SetTimer(DeathMontageTimerHandle, this, &ACCharacter::DeathMontageFinished, MontageDuration + DeathMontageFinishTimeShift);		
+	}
 }
 
 void ACCharacter::StartDeathSequence()
@@ -159,6 +186,7 @@ void ACCharacter::StartDeathSequence()
 void ACCharacter::Respawn()
 {
 	OnRespawn();
+	SetRagdollEnabled(false);
 	//UE_LOG(LogTemp, Warning, TEXT("Respawn"));
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	GetCharacterMovement()->SetMovementMode(MOVE_Walking);
