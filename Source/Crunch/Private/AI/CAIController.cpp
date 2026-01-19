@@ -1,41 +1,39 @@
-﻿
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
-#include "CAIController.h"
 
-#include "BehaviorTree/BlackboardComponent.h"
-#include "Perception/AIPerceptionComponent.h"
-#include "Perception/AIPerceptionTypes.h"
+#include "AI/CAIController.h"
 #include "Character/CCharacter.h"
+#include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
-
+#include "BehaviorTree/BlackboardComponent.h"
 
 ACAIController::ACAIController()
 {
-	AIPerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>("AI Perception");
-	SenseConfig = CreateDefaultSubobject<UAISenseConfig_Sight>("Sight config");
+	AIPerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>("AI Perception Component");
+	SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>("Sight Config");
 
-	SenseConfig->DetectionByAffiliation.bDetectEnemies = true;
-	SenseConfig->DetectionByAffiliation.bDetectFriendlies = false;
-	SenseConfig->DetectionByAffiliation.bDetectNeutrals = false;
+	SightConfig->DetectionByAffiliation.bDetectEnemies = true;
+	SightConfig->DetectionByAffiliation.bDetectFriendlies = false;
+	SightConfig->DetectionByAffiliation.bDetectNeutrals = false;
 
-	SenseConfig->SightRadius = 1000.f;
-	SenseConfig->LoseSightRadius = 1200.f;
+	SightConfig->SightRadius = 1000.f;
+	SightConfig->LoseSightRadius = 1200.f;
 
-	SenseConfig->SetMaxAge(5.f);
+	SightConfig->SetMaxAge(5.f);
 
-	SenseConfig->PeripheralVisionAngleDegrees = 100.f;
+	SightConfig->PeripheralVisionAngleDegrees = 180.f;
 
-	AIPerceptionComponent->ConfigureSense(*SenseConfig);
+	AIPerceptionComponent->ConfigureSense(*SightConfig);
 	AIPerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(this, &ACAIController::TargetPerceptionUpdated);
-	
+	AIPerceptionComponent->OnTargetPerceptionForgotten.AddDynamic(this, &ACAIController::TargetForgotten);
 }
 
-void ACAIController::OnPossess(APawn* InPawn)
+void ACAIController::OnPossess(APawn* NewPawn)
 {
-	Super::OnPossess(InPawn);
+	Super::OnPossess(NewPawn);
 	SetGenericTeamId(FGenericTeamId(0));
 
-	IGenericTeamAgentInterface* PawnTeamInterface = Cast<IGenericTeamAgentInterface>(InPawn);
+	IGenericTeamAgentInterface* PawnTeamInterface = Cast<IGenericTeamAgentInterface>(NewPawn);
 	if (PawnTeamInterface)
 	{
 		PawnTeamInterface->SetGenericTeamId(GetGenericTeamId());
@@ -54,18 +52,22 @@ void ACAIController::TargetPerceptionUpdated(AActor* TargetActor, FAIStimulus St
 	{
 		if (!GetCurrentTarget())
 		{
-			//UE_LOG(LogTemp, Display, TEXT("TargetPerceptionUpdated(), NoCurrentTarget, setting"));
 			SetCurrentTarget(TargetActor);
 		}
-		//UE_LOG(LogTemp, Display, TEXT("TargetPerceptionUpdated(), CurrentTarget exists"));
-
 	}
 	else
 	{
-		//UE_LOG(LogTemp, Display, TEXT("TargetPerceptionUpdated(), NothingSensed"));
+	}
+}
 
-		if (GetCurrentTarget() == TargetActor)
-			SetCurrentTarget(nullptr);
+void ACAIController::TargetForgotten(AActor* ForgottenActor)
+{
+	if (!ForgottenActor)
+		return;
+
+	if (GetCurrentTarget() == ForgottenActor)
+	{
+		SetCurrentTarget(GetNextPerceivedActor());
 	}
 }
 
@@ -74,11 +76,8 @@ const UObject* ACAIController::GetCurrentTarget() const
 	const UBlackboardComponent* BlackboardComponent = GetBlackboardComponent();
 	if (BlackboardComponent)
 	{
-		//UE_LOG(LogTemp, Display, TEXT("GetCurrentTarget(), blackBoardFound"));
 		return GetBlackboardComponent()->GetValueAsObject(TargetBlackboardKeyName);
 	}
-	//UE_LOG(LogTemp, Display, TEXT("GetCurrentTarget(), blackBoard NOt Found"));
-
 	return nullptr;
 }
 
@@ -98,3 +97,18 @@ void ACAIController::SetCurrentTarget(AActor* NewTarget)
 	}
 }
 
+AActor* ACAIController::GetNextPerceivedActor() const
+{
+	if (PerceptionComponent)
+	{
+		TArray<AActor*> Actors;
+		AIPerceptionComponent->GetPerceivedHostileActors(Actors);
+
+		if (Actors.Num() != 0)
+		{
+			return Actors[0];
+		}
+	}
+
+	return nullptr;
+}
