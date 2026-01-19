@@ -193,12 +193,13 @@ void ACCharacter::StartDeathSequence()
 	
 	GetCharacterMovement()->SetMovementMode(MOVE_None);
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	//UE_LOG(LogTemp, Warning, TEXT("Dead"));
+	SetAIPerceptionStimuliSourceEnabled(false);
 }
 
 void ACCharacter::Respawn()
 {
 	OnRespawn();
+	SetAIPerceptionStimuliSourceEnabled(true);
 	SetRagdollEnabled(false);
 	//UE_LOG(LogTemp, Warning, TEXT("Respawn"));
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
@@ -238,6 +239,23 @@ void ACCharacter::SetGenericTeamId(const FGenericTeamId& NewTeamID)
 FGenericTeamId ACCharacter::GetGenericTeamId() const
 {
 	return TeamId;
+}
+
+void ACCharacter::SetAIPerceptionStimuliSourceEnabled(bool bIsEnabled)
+{
+	if (!PerceptionStimuliSourceComponent)
+	{
+		return;
+	}
+
+	if (bIsEnabled)
+	{
+		PerceptionStimuliSourceComponent->RegisterWithPerceptionSystem();
+	}
+	else
+	{
+		PerceptionStimuliSourceComponent->UnregisterFromPerceptionSystem();
+	}
 }
 
 // Called every frame
