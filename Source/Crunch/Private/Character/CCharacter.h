@@ -98,4 +98,12 @@ public:
 private:
 	UPROPERTY(Replicated)
 	FGenericTeamId TeamId;
+
+	
+	/**********************************************************************/
+	/*                               AI                                 */
+	/**********************************************************************/
+private:
+	UPROPERTY()
+	class UAIPerceptionStimuliSourceComponent* PerceptionStimuliSourceComponent;
 };
