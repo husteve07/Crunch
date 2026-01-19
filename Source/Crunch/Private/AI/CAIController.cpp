@@ -2,6 +2,7 @@
 
 #include "CAIController.h"
 
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AIPerceptionTypes.h"
 #include "Character/CCharacter.h"
@@ -25,6 +26,7 @@ ACAIController::ACAIController()
 	SenseConfig->PeripheralVisionAngleDegrees = 100.f;
 
 	AIPerceptionComponent->ConfigureSense(*SenseConfig);
+	AIPerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(this, &ACAIController::TargetPerceptionUpdated);
 	
 }
 
@@ -37,6 +39,62 @@ void ACAIController::OnPossess(APawn* InPawn)
 	if (PawnTeamInterface)
 	{
 		PawnTeamInterface->SetGenericTeamId(GetGenericTeamId());
+	}
+}
+
+void ACAIController::BeginPlay()
+{
+	Super::BeginPlay();
+	RunBehaviorTree(BehaviorTree);
+}
+
+void ACAIController::TargetPerceptionUpdated(AActor* TargetActor, FAIStimulus Stimulus)
+{
+	if (Stimulus.WasSuccessfullySensed())
+	{
+		if (!GetCurrentTarget())
+		{
+			//UE_LOG(LogTemp, Display, TEXT("TargetPerceptionUpdated(), NoCurrentTarget, setting"));
+			SetCurrentTarget(TargetActor);
+		}
+		//UE_LOG(LogTemp, Display, TEXT("TargetPerceptionUpdated(), CurrentTarget exists"));
+
+	}
+	else
+	{
+		//UE_LOG(LogTemp, Display, TEXT("TargetPerceptionUpdated(), NothingSensed"));
+
+		if (GetCurrentTarget() == TargetActor)
+			SetCurrentTarget(nullptr);
+	}
+}
+
+const UObject* ACAIController::GetCurrentTarget() const
+{
+	const UBlackboardComponent* BlackboardComponent = GetBlackboardComponent();
+	if (BlackboardComponent)
+	{
+		//UE_LOG(LogTemp, Display, TEXT("GetCurrentTarget(), blackBoardFound"));
+		return GetBlackboardComponent()->GetValueAsObject(TargetBlackboardKeyName);
+	}
+	//UE_LOG(LogTemp, Display, TEXT("GetCurrentTarget(), blackBoard NOt Found"));
+
+	return nullptr;
+}
+
+void ACAIController::SetCurrentTarget(AActor* NewTarget)
+{
+	UBlackboardComponent* BlackboardComponent = GetBlackboardComponent();
+	if (!BlackboardComponent)
+		return;
+
+	if (NewTarget)
+	{
+		BlackboardComponent->SetValueAsObject(TargetBlackboardKeyName, NewTarget);
+	}
+	else
+	{
+		BlackboardComponent->ClearValue(TargetBlackboardKeyName);
 	}
 }
 
