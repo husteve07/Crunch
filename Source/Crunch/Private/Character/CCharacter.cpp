@@ -247,6 +247,10 @@ FGenericTeamId ACCharacter::GetGenericTeamId() const
 	return TeamId;
 }
 
+void ACCharacter::OnRep_TeamID()
+{
+}
+
 void ACCharacter::SetAIPerceptionStimuliSourceEnabled(bool bIsEnabled)
 {
 	if (!PerceptionStimuliSourceComponent)
