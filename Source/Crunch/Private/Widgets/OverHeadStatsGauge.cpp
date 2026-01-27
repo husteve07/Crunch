@@ -1,11 +1,10 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "OverHeadStatsGauge.h"
-
+#include "Widgets/OverHeadStatsGauge.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
-#include "ValueGauge.h"
+#include "Widgets/ValueGauge.h"
 #include "GAS/CAttributeSet.h"
 
 void UOverHeadStatsGauge::ConfigureWithASC(UAbilitySystemComponent* AbilitySystemComponent)

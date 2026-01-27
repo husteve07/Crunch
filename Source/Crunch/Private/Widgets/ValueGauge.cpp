@@ -1,10 +1,9 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "ValueGauge.h"
-
-#include "AbilitySystemComponent.h"
+#include "Widgets/ValueGauge.h"
 #include "Components/ProgressBar.h"
+#include "AbilitySystemComponent.h"
 #include "Components/TextBlock.h"
 
 void UValueGauge::NativePreConstruct()
@@ -13,18 +12,18 @@ void UValueGauge::NativePreConstruct()
 	ProgressBar->SetFillColorAndOpacity(BarColor);
 }
 
-void UValueGauge::SetAndBoundToGameplayAttribute(class UAbilitySystemComponent* AbilitySystemComponent,
-	const FGameplayAttribute& Attribute, const FGameplayAttribute& MaxAttribute)
+void UValueGauge::SetAndBoundToGameplayAttribute(UAbilitySystemComponent* AbilitySystemComponent, const FGameplayAttribute& Attribute, const FGameplayAttribute& MaxAttribute)
 {
-	if(AbilitySystemComponent)
+	if (AbilitySystemComponent)
 	{
 		bool bFound;
 		float Value = AbilitySystemComponent->GetGameplayAttributeValue(Attribute, bFound);
 		float MaxValue = AbilitySystemComponent->GetGameplayAttributeValue(MaxAttribute, bFound);
 		if (bFound)
 		{
-			SetValue(Value,MaxValue);
+			SetValue(Value, MaxValue);
 		}
+
 		AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(Attribute).AddUObject(this, &UValueGauge::ValueChanged);
 		AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(MaxAttribute).AddUObject(this, &UValueGauge::MaxValueChanged);
 	}
@@ -34,11 +33,10 @@ void UValueGauge::SetValue(float NewValue, float NewMaxValue)
 {
 	CachedValue = NewValue;
 	CachedMaxValue = NewMaxValue;
-		
-	if (NewMaxValue == 0 )
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Value Gauge %s, NewMaxValue can't be 0"), *GetName());
 
+	if (NewMaxValue == 0)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Value Guage: %s, NewMaxValue can't be 0"), *GetName());
 		return;
 	}
 
@@ -54,7 +52,6 @@ void UValueGauge::SetValue(float NewValue, float NewMaxValue)
 			FText::AsNumber(NewMaxValue, &FormatOps)
 		)
 	);
-	
 }
 
 void UValueGauge::ValueChanged(const FOnAttributeChangeData& ChangedData)

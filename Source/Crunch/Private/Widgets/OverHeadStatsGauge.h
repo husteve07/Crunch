@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -10,12 +10,11 @@
  * 
  */
 UCLASS()
-class CRUNCH_API UOverHeadStatsGauge : public UUserWidget
+class UOverHeadStatsGauge : public UUserWidget
 {
 	GENERATED_BODY()
 public:
 	void ConfigureWithASC(class UAbilitySystemComponent* AbilitySystemComponent);
-
 private:
 	UPROPERTY(meta=(BindWidget))
 	class UValueGauge* HealthBar;

@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -11,34 +11,34 @@
  * 
  */
 UCLASS()
-class CRUNCH_API ACPlayerController : public APlayerController, public IGenericTeamAgentInterface
+class ACPlayerController : public APlayerController, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 public:
-	//called on server
-	void OnPossess(APawn* InPawn) override;
+	// only called on the server
+	void OnPossess(APawn* NewPawn) override;
 
-	//called on client
-	void AcknowledgePossession(class APawn* P) override;
-
+	// only called on the client, also on the linstening server.
+	void AcknowledgePossession(APawn* NewPawn) override;
+	/** Assigns Team Agent to given TeamID */
 	virtual void SetGenericTeamId(const FGenericTeamId& NewTeamID) override;
-
+	
+	/** Retrieve team identifier in form of FGenericTeamId */
 	virtual FGenericTeamId GetGenericTeamId() const override;
-
-	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
+	virtual void GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const override;
 
 private:
 	void SpawnGameplayWidget();
-	
+
 	UPROPERTY()
 	class ACPlayerCharacter* CPlayerCharacter;
 
-	UPROPERTY(EditDefaultsOnly, Category="UI")
+	UPROPERTY(EditDefaultsOnly, Category = "UI")
 	TSubclassOf<class UGameplayWidget> GameplayWidgetClass;
 
 	UPROPERTY()
 	class UGameplayWidget* GameplayWidget;
 
 	UPROPERTY(Replicated)
-	FGenericTeamId TeamId;
+	FGenericTeamId TeamID;
 };

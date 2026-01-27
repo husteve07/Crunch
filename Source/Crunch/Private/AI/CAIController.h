@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -7,7 +7,6 @@
 #include "GameplayTagContainer.h"
 #include "CAIController.generated.h"
 
-struct FAIStimulus;
 /**
  * 
  */
@@ -49,5 +48,5 @@ private:
 	void ClearAndDisableAllSenses();
 	void EnableAllSenses();
 
-	void PawnDeadTagUpdated(const FGameplayTag Tag, int32 Count);	
+	void PawnDeadTagUpdated(const FGameplayTag Tag, int32 Count);
 };

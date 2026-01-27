@@ -1,28 +1,26 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "CPlayerController.h"
-
-#include "CPlayerCharacter.h"
-#include "Blueprint/UserWidget.h"
+#include "Player/CPlayerController.h"
+#include "Player/CPlayerCharacter.h"
 #include "Net/UnrealNetwork.h"
 #include "Widgets/GameplayWidget.h"
 
-void ACPlayerController::OnPossess(APawn* InPawn)
+void ACPlayerController::OnPossess(APawn* NewPawn)
 {
-	Super::OnPossess(InPawn);
-	CPlayerCharacter = Cast<ACPlayerCharacter>(InPawn);
+	Super::OnPossess(NewPawn);
+	CPlayerCharacter = Cast<ACPlayerCharacter>(NewPawn);
 	if (CPlayerCharacter)
 	{
 		CPlayerCharacter->ServerSideInit();
-		CPlayerCharacter->SetGenericTeamId(TeamId);
+		CPlayerCharacter->SetGenericTeamId(TeamID);
 	}
 }
 
-void ACPlayerController::AcknowledgePossession(class APawn* P)
+void ACPlayerController::AcknowledgePossession(APawn* NewPawn)
 {
-	Super::AcknowledgePossession(P);
-	CPlayerCharacter = Cast<ACPlayerCharacter>(P);
+	Super::AcknowledgePossession(NewPawn);
+	CPlayerCharacter = Cast<ACPlayerCharacter>(NewPawn);
 	if (CPlayerCharacter)
 	{
 		CPlayerCharacter->ClientSideInit();
@@ -32,25 +30,25 @@ void ACPlayerController::AcknowledgePossession(class APawn* P)
 
 void ACPlayerController::SetGenericTeamId(const FGenericTeamId& NewTeamID)
 {
-	TeamId = NewTeamID;
+	TeamID = NewTeamID;
 }
 
 FGenericTeamId ACPlayerController::GetGenericTeamId() const
 {
-	return TeamId;
+	return TeamID;
 }
 
-void ACPlayerController::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
+void ACPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	DOREPLIFETIME(ACPlayerController, TeamId);
+	DOREPLIFETIME(ACPlayerController, TeamID);
 }
 
 void ACPlayerController::SpawnGameplayWidget()
 {
 	if (!IsLocalPlayerController())
 		return;
+
 	GameplayWidget = CreateWidget<UGameplayWidget>(this, GameplayWidgetClass);
 	if (GameplayWidget)
 	{

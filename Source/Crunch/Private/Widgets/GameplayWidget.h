@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -10,12 +10,11 @@
  * 
  */
 UCLASS()
-class CRUNCH_API UGameplayWidget : public UUserWidget
+class UGameplayWidget : public UUserWidget
 {
 	GENERATED_BODY()
 public:
 	virtual void NativeConstruct() override;
-	
 private:
 	UPROPERTY(meta=(BindWidget))
 	class UValueGauge* HealthBar;

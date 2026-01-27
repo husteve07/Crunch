@@ -1,18 +1,15 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "CGameMode.h"
-
-#include "EngineUtils.h"
-#include "Components/WidgetInteractionComponent.h"
+#include "Framework/CGameMode.h"
 #include "GameFramework/PlayerStart.h"
-#include "Interfaces/IPluginManager.h"
+#include "EngineUtils.h"
 
 APlayerController* ACGameMode::SpawnPlayerController(ENetRole InRemoteRole, const FString& Options)
 {
 	APlayerController* NewPlayerController = Super::SpawnPlayerController(InRemoteRole, Options);
-	FGenericTeamId TeamId = GetTeamIDForPlayer(NewPlayerController);
 	IGenericTeamAgentInterface* NewPlayerTeamInterface = Cast<IGenericTeamAgentInterface>(NewPlayerController);
+	FGenericTeamId TeamId = GetTeamIDForPlayer(NewPlayerController);
 	if (NewPlayerTeamInterface)
 	{
 		NewPlayerTeamInterface->SetGenericTeamId(TeamId);
@@ -26,13 +23,12 @@ FGenericTeamId ACGameMode::GetTeamIDForPlayer(const APlayerController* PlayerCon
 {
 	static int PlayerCount = 0;
 	++PlayerCount;
-	return FGenericTeamId(PlayerCount%2);
+	return FGenericTeamId(PlayerCount % 2);
 }
 
-AActor* ACGameMode::FindNextStartSpotForTeam(const FGenericTeamId& TeamId) const
+AActor* ACGameMode::FindNextStartSpotForTeam(const FGenericTeamId& TeamID) const
 {
-	const FName* StartSpotTag = TeamStartSpotTagMap.Find(TeamId);
-
+	const FName* StartSpotTag = TeamStartSpotTagMap.Find(TeamID);
 	if (!StartSpotTag)
 	{
 		return nullptr;

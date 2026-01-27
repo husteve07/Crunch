@@ -1,7 +1,7 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "GameplayWidget.h"
+#include "Widgets/GameplayWidget.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
 #include "Widgets/ValueGauge.h"
@@ -10,6 +10,7 @@
 void UGameplayWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
+
 	OwnerAbilitySystemComponent = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(GetOwningPlayerPawn());
 	if (OwnerAbilitySystemComponent)
 	{

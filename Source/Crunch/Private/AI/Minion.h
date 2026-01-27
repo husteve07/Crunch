@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -6,13 +6,18 @@
 #include "Character/CCharacter.h"
 #include "Minion.generated.h"
 
+/**
+ * 
+ */
 UCLASS()
-class CRUNCH_API AMinion : public ACCharacter
+class AMinion : public ACCharacter
 {
 	GENERATED_BODY()
-
 public:
 	virtual void SetGenericTeamId(const FGenericTeamId& NewTeamId) override;
+	bool IsActive() const;
+	void Activate();
+	
 private:
 	void PickSkinBasedOnTeamID();
 
