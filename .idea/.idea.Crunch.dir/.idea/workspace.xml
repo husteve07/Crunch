@@ -8,267 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vsconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/AIC_Minion_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/AIC_Minion_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Animations/AnimBP_Minion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Animations/AnimBP_Minion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/Animations/AM_Combo_Minion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/Animations/AM_Combo_Minion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/GA_Combo_Minion_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/GA_Combo_Minion_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/GE_Combo_Damage_Minion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/GE_Combo_Damage_Minion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/GameplayEffect/GE_Init_Minion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BP.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BT.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animations/AM_Death_Crunch.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animations/AM_HitReact.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animations/AO_Crunch_Look.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animations/AnimBP_Crunch.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animations/BS_Crunch_Jog_Lean.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animations/CR_Crunch_IK_Foot.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/Animations/AM_Combo_Punch.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/BP_GA_Combo_Crunch.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffect/GE_Damage_Crunch_Combo_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffect/GE_Damage_Crunch_Combo_02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffect/GE_Damage_Crunch_Combo_03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffect/GE_Damage_Crunch_Combo_04.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GameplayEffect/GE_Init.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GameplayEffect/GE_Init.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Cosmetics/CS_Default_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Cosmetics/CS_Default_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Framework/BP_CGameMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/GameplayEffects/GE_Death.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/GameplayEffects/GE_Death.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/GameplayEffects/GE_FullStat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/GameplayEffects/GE_FullStat.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_cameraShake.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_cameraShake.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit_crunch_punch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit_crunch_punch.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit_minion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit_minion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hitreaction.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/GAS/IA_BasicAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/GAS/IA_BasicAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IA_Jump.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IA_Jump.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IA_Look.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IA_Look.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IA_Move.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IA_Move.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Gameplay.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Map/TestMap.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Map/TestMap_HLOD0_Instancing.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_02.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_03.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Combo_04.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Extents.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Extents.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Skeleton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/FX/Particles/Abilities/Hook/FX/P_Crunch_Hook_Impact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/FX/Particles/Abilities/Hook/FX/P_Crunch_Hook_Impact.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ParagonMinions/Characters/Minions/Down_Minions/Animations/Melee/NonCombat_Idle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonMinions/Characters/Minions/Down_Minions/Animations/Melee/NonCombat_Idle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_CPlayerCharacter.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_CPlayerController.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGauge/WBP_OverHeadGauge.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGauge/WBP_ValueGauge.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/WBP_Gameplay.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/1H/4EGBHZXTO0T8AJ3UPIJ52K.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/DU/0SEIK1IGOQ8XFH1MPX3NWR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/FS/4T22JDJA9ASYWYQGGKGUC3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/FW/795BZBOS5E7ZO6ABSJ63DG.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/HQ/796MN81QJLX5ANQ7ALFC3M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/P4/NRHQMT4NFGFY01IY1IW3YT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/T5/21HQ97UCWAUO5JPZL3BFYA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/UM/8GNTEPWPQA59E4Y4POB8JN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/W9/4SZJHY4NRQ3HQH5ZYJB74M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/Y2/A2NV2YAFRNIRDOPSN9BAO7.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/0/Z4/8FPC7RTDOUJ4Q0TF1FQ4PK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/1/2X/PNCD39XD5TM0CALUSJCLH5.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/1/BW/GQVLC8ASV9FNI7RONCEWEY.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/1/E7/MEWN9YXO1QO3E2QLZPNDHL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/1/EL/EZL2YFCFITPPZ7Y98GQP30.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/1/J8/3W4W4U71I3G3FRWBIPADWE.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/2/0D/V0TNRLY9MUWRTVFQLSNW3S.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/2/41/D2KXEOVA1IEN6W60CU6NZT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/2/DU/JEIUI87G67D227WKF85JMN.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/2/FQ/G1V41JIGHBVNELTQL5G4LB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/2/Q0/YTM45VW3M8722OM8C18WEW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/2/QX/DABK7J1QC1I3XJYD9T5UVV.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/0C/B5QYR3LQXO93ZL78IHY0EL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/0M/1SWBXM9GJEVB9YRV2M9JAD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/3B/S3TZMJM591JVDEWX1SX9ZR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/8C/Q2RAIRAYCHATXY3K6IXUT9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/96/N28WG3WZ9VIACI494JZAPP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/CM/MC6UCHVLQ0QI2MDO6PMYS6.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/CT/JF2VZ7XCEJS0EJM9TRF5X8.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/E2/T4MQSKFVV3JJ1EWXYNO1JR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/KG/B8W9KW6DKI94YRGN5EJRU6.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/3/NU/NKPZHVOXW5GE4J39GH5ZY2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/46/VIXX420H4NEQLKD40UWDXO.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/C6/52JBOAPG1PWCSQD0HZTU3V.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/EU/F6B7MHULTOWK94DV6VMKCJ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/EY/VBUSVGEL9ONRWNX2LO0SYY.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/LA/MZB1KH6HUZPA5F1JZ33F1Q.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/N5/T51VR1W6QHCIVK5X5DY14L.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/N8/4EM0ZYEP3XIEZLDJO93P2A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/OZ/537D36VLL0YWH3GQMW7BCM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/T7/XMHWI6OIDZHM1V216MH58W.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/ZN/MEFPU48STYJKVSBEMYKTQH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/4/ZW/FV6YVD4PXGQ3AB8KSBENFY.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/3A/RIH7QHD4R396XDCS5CUSZW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/AJ/5YN9OIVOIUX6XB768OA6ME.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/DC/57QB4FSLP47VUO5S3M7D6C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/EC/DXHL8JSI2BFCXTRTYLQ3MA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/GC/AZ2FME085AIAET437W7DQL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/GM/VKIMZKMFAI1SHGHMBHT3FY.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/OI/IB61HJKNEFIRR6YI2DJQ6R.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/5/QZ/G0CDQXBTA7XETI3EG8JKG2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/AD/CEKDJL8U5F8XK5JL8DQGPW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/GW/CYIV3J9D7JVB90FNRGRE1V.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/H9/D5T4X63UGZOT1BS7DE6OWX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/HS/NASEPBQC3IYQ4K11E9073N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/JX/GSVM4RM0AMV4XP7I2SUONO.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/KG/SE9BKB1OQ1V0V5F14JVG4U.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/O2/CU8X9C4OI3896XQYQKC6NP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/P3/6LGHQRQQPA9RNCFISG4IW9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/U0/HWURAMIDHY4CSXN0347YB7.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/V5/FTAWY4E8J0IJP7YD03LK3N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/6/Y6/VJVJ128I8EGO3H4ZDWBRRG.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/6L/PVJFA0W622B5DQ03EEEA0N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/8F/9GP2F84YLUBK9VRQNCZN3J.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/AO/S9ITEIL9OZ2RBNWDUNYSMH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/EF/2YD0EBYJAGDFOKCY53V2BI.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/JB/OGJQLS0U8M6BC4SS2YE9BH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/NQ/22M2NHB19PDYY9D9GV9ION.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/PE/CZJ2KIMW6LGL3JD3QC5QDY.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/7/W0/4DN7A2MMBS94ICHYSB5MY0.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/1A/ZW8CNQC8LX9XDO673IX8A1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/3O/HWA9LMN92BK9UO1KYBQPIA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/4T/XS835TG0XAISPPYR9G47Q0.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/60/M7RGEVDQL795XHDCZ8IKSP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/9R/PZ37A5UZLLK96QD3C7602I.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/JV/S82XN7FFYLGKXH04PJFYSC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/K6/WDWZJONZ1F658W4EVHFDUZ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/LY/5YBM6V5I48O6EET15Q27R3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/M1/LU1RUTO29LVLH2VB7B557G.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/NN/NVWATZ26XBUR1EVHZKZ037.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/V8/FRKNFHYY98XAUZJWCTCL4L.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/8/XL/V7UT52WZHVC6ZGJU2DSID5.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/0C/VAMDPPJ4H5J48MYMAN3LF4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/69/4E4LBW3EG2FVNG0Z1C5UAH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/6S/DI5RDV91255KFZKJBH73SU.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/GO/V9LVFX3EH2VTS08QMUL7QK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/J3/PF481SYX8M85FGKAMYYE17.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/NR/DUZ0PG7A1ZEBVQ19QS7WBF.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/OG/5V0YGJRZDC1BGV0NCOT8Q1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/PP/DCLVARR7F7ITLY8NMCIW2F.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/X2/9EUQYJPIQR1FXZWFPSG2JP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/XY/6M6JBU7MZZ7E40REC55Z8Q.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/9/XZ/XR4HRZ8VHKYRS1VV8QA42H.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/A/E8/WAY48JFMU96QMES5WVYQB9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/A/EI/19BZ502OK5HWRPUZ3OKTEX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/A/RD/U3YZ8XF04LGB8KNBQWA41N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/A/RN/JN026UC5HKV5QMZ6RC7YQ0.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/A/T8/ZWKJQ7NSRECSYRID99JZAD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/A/YE/DIWK1HP8M6LLFGXMCU8AGK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/B/MQ/4XZT43TQLR11JWII08EE9H.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/B/T3/LL5TB9QCT2HZ4KXF824H6N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/B/U0/IST2JFBC6CSY2ADAQKLLEJ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/B/W0/WIUZ8M8DPVMB8G3ZCCV4PB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/1J/M4QOW80DIUMELDL2RVIDYC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/7V/N7F1KPHJJQHM8OET9SWLG7.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/7W/7JFB2BVJ1JCFFSTJ21O16U.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/A5/BJN27DBEL7ZVG2GEPB6HW7.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/BV/0PJ57IXJNUVN5GPAZJVV9F.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/HC/UHJX3KG08B2WNMRXJRJOCE.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/NQ/XXRCK0EGVY258D3QV5PKGK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/OW/PLF8EH39HVGAWS5WWWZ2F2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/RT/R6G6RIJUIJM5A8CMMLLMWZ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/RW/82MT9WM8VHMXXDJ4DVKNBD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/SQ/DUBHN7Y36QWZ9RP23R8NYL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/SW/TFA7GXKAO8IX88PQLC7VCB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/TN/4WSXWJVX4ABIS3P0BWUZ6V.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/C/WL/HJIO2PWALU97MQ65ZF5S44.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/1C/O6Y0GE113704SOP5Z2XX8E.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/2X/9BMVNXA0G8XT5HN9VZSC49.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/F8/1A21232GAKOMFJOVH28MBT.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/G0/JIM1R7FAB9IGCNAASXSBZR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/JA/F1PJEL4HYS61VDY0RHREC0.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/P7/RHRQG2ACMO93QJ7ZBJRGEY.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/QL/M7JJVH13JCPIS6PVSPY6BB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/SI/UECNQH2MQY0QCANIAE81OX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/D/YQ/3PJSSSF1Z695DRV8HQG8CF.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/2S/WUERZT8822GOREZZS9AEBE.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/4K/ZFHHTAG8V0OAJRK1B9U5VB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/A1/DKD0K6YN2VT1RYGL80062U.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/BM/NR4PCO34G5R1TE1E07P3SD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/BS/V0148R69WVADV9RDHFXLVH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/FP/LZTCW0K6EMYVPQ0H6DQURV.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/QN/S3K3R7HI01IGORFNYR6DM9.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/RZ/QNU74KHXRJ7FO3HK5ZQRCD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/UD/SEH1IL92MFY8W823SD9GM6.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/VI/N9OFJI1TY556TVOIHW4AKE.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/XK/8YP6TM77C8MAUZ3FPKPJXI.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/E/ZU/U354KANF7PUC8N8WT483AZ.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Map/TestMap/F/3T/HKB4QTLTR7NVWKGDAOUDVD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Map/TestMap/5/BW/ZU7YZWOKENOLLAIY8Y7YEF.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Map/TestMap/7/BC/ZIPQ7PG3MD74VYU0GOZ77Y.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Map/TestMap/9/F3/XH08D2VO4TVV1OGI3VH579.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Map/TestMap/A/X4/SW6DBI6KULGQ41KXOM65NK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Map/TestMap/B/83/FI4YVXP92I1OYHLUP2AVRH.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Map/TestMap/E/YP/7XJRLU9CEWXPDJ2Y25SURX.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crunch.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Crunch.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crunch.uproject.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/CrunchGameModeBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/CrunchGameModeBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/BTTask_SendInputToAbilitySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/BTTask_SendInputToAbilitySystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/BTTask_SendInputToAbilitySystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/BTTask_SendInputToAbilitySystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendGameplayEvent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendGameplayEvent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendGameplayEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendGameplayEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SentTargetGroup.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SentTargetGroup.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UCAbilitySystemStatics.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UCAbilitySystemStatics.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/OverHeadStatsGauge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/OverHeadStatsGauge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/OverHeadStatsGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/OverHeadStatsGauge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/ValueGauge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/ValueGauge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/ValueGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/ValueGauge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CrunchEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CrunchEditor.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,42 +28,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "husteve07"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;husteve07&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/husteve07/Crunch.git",
-    "accountId": "e5bc6b62-e6e0-4a00-941e-b9676afb763a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/husteve07/Crunch.git&quot;,
+    &quot;accountId&quot;: &quot;e5bc6b62-e6e0-4a00-941e-b9676afb763a&quot;
   }
-}]]></component>
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="38rPAgDBywfsGNC0wrvIBxoP3qr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Uproject.Crunch.executor": "Run",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Uproject.Crunch.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Crunch" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -400,8 +147,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769554576384</updated>
-      <workItem from="1769554579576" duration="1243000" />
+      <workItem from="1769554579576" duration="1371000" />
+      <workItem from="1770010521210" duration="2588000" />
     </task>
+    <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
+      <option name="closed" value="true" />
+      <created>1769555933805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769555933805</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,5 +168,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="- Implemented Minion Barrack &#10;- a shit ton of refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Implemented Minion Barrack &#10;- a shit ton of refactoring" />
   </component>
 </project>

@@ -4,6 +4,8 @@
 #include "AI/Minion.h"
 
 #include "AbilitySystemComponent.h"
+#include "AIController.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "GAS/CAbilitySystemStatics.h"
 
 void AMinion::SetGenericTeamId(const FGenericTeamId& NewTeamId)
@@ -28,6 +30,17 @@ void AMinion::PickSkinBasedOnTeamID()
 	if (Skin)
 	{
 		GetMesh()->SetSkeletalMesh(*Skin);
+	}
+}
+
+void AMinion::SetGoal(AActor* Goal)
+{
+	if (AAIController* AIController = GetController<AAIController>())
+	{
+		if (UBlackboardComponent* BlackboardComponent = AIController->GetBlackboardComponent())
+		{
+			BlackboardComponent->SetValueAsObject(GoalBlackboardKeyName, Goal);
+		}
 	}
 }
 
