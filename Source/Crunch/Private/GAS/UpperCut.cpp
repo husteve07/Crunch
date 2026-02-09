@@ -3,11 +3,17 @@
 
 #include "UpperCut.h"
 
+#include "CAbilitySystemStatics.h"
 #include "GameplayTagsManager.h"
 #include "GA_Combo.h"
 #include "Abilities/Tasks/AbilityTask_PlayMontageAndWait.h"
 #include "Abilities/Tasks/AbilityTask_WaitGameplayEvent.h"
 
+
+UUpperCut::UUpperCut()
+{
+	BlockAbilitiesWithTag.AddTag(UCAbilitySystemStatics::GetBasicAttackAbilityTag());
+}
 
 void UUpperCut::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData)
 {
@@ -53,6 +59,13 @@ void UUpperCut::StartLaunching(FGameplayEventData EventData)
 	UAbilityTask_WaitGameplayEvent* WaitComboChangeEvent = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, UGA_Combo::GetComboChangedEventTag(), nullptr, false, false);
 	WaitComboChangeEvent->EventReceived.AddDynamic(this, &UUpperCut::HandleComboChangeEvent);
 	WaitComboChangeEvent->ReadyForActivation();
+	UAbilityTask_WaitGameplayEvent* WaitComboCommitEvent = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, UCAbilitySystemStatics::GetBasicAttackInputPressedTag());
+	WaitComboCommitEvent->EventReceived.AddDynamic(this, &UUpperCut::HandleComboCommitEvent);
+	WaitComboCommitEvent->ReadyForActivation();
+	
+	UAbilityTask_WaitGameplayEvent* WaitComboDamageEvent = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, UGA_Combo::GetComboTargetEventTag());
+	WaitComboDamageEvent->EventReceived.AddDynamic(this, &UUpperCut::HandleComboDamageEvent);
+	WaitComboDamageEvent->ReadyForActivation();
 }
 
 void UUpperCut::HandleComboChangeEvent(FGameplayEventData EventData)
@@ -70,4 +83,34 @@ void UUpperCut::HandleComboChangeEvent(FGameplayEventData EventData)
 
 	NextComboName = TagNames.Last();
 	UE_LOG(LogTemp, Warning, TEXT("Next Combo is: %s"), *NextComboName.ToString());
+}
+
+void UUpperCut::HandleComboCommitEvent(FGameplayEventData EventData)
+{
+	if (NextComboName == NAME_None)
+	{
+		return;
+	}
+
+	UAnimInstance* OwnerAnimInst = GetOwnerAnimInstance();
+	if (!OwnerAnimInst)
+	{
+		return;
+	}
+
+	OwnerAnimInst->Montage_SetNextSection(OwnerAnimInst->Montage_GetCurrentSection(UpperCutMontage), NextComboName, UpperCutMontage);
+}
+
+void UUpperCut::HandleComboDamageEvent(FGameplayEventData EventData)
+{
+	if (K2_HasAuthority())
+	{
+		TArray<FHitResult> TargetHitResults = GetHitResultFromSweepLocationTargetData(EventData.TargetData, TargetSweepSphereRadius, ETeamAttitude::Hostile, ShouldDrawDebug());
+		PushTarget(GetAvatarActorFromActorInfo(), FVector::UpVector * UpperComboHoldSpeed);
+		for (FHitResult& HitResult : TargetHitResults)
+		{
+			PushTarget(HitResult.GetActor(), FVector::UpVector * UpperComboHoldSpeed);
+			ApplyGameplayEffectToHitResultActor(HitResult, LaunchDamageEffect, GetAbilityLevel(CurrentSpecHandle, CurrentActorInfo));
+		}
+	}
 }

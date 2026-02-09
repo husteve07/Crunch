@@ -13,13 +13,18 @@ UCLASS()
 class CRUNCH_API UUpperCut : public UCGameplayAbility
 {
 	GENERATED_BODY()
-public:	
+public:
+	UUpperCut();
+	
 	virtual void ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData) override;
 
 private:
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Launch")
 	TSubclassOf<UGameplayEffect> LaunchDamageEffect;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Launch")
+	float UpperComboHoldSpeed= 100.f;
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Launch")
 	float UpperCutLaunchSpeed = 1000.f;
@@ -38,6 +43,12 @@ private:
 	
 	UFUNCTION()
 	void HandleComboChangeEvent(FGameplayEventData EventData);
+
+	UFUNCTION()
+	void HandleComboCommitEvent(FGameplayEventData EventData);
+
+	UFUNCTION()
+	void HandleComboDamageEvent(FGameplayEventData EventData);
 
 	FName NextComboName;
 };
