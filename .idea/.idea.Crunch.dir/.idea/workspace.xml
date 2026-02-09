@@ -7,19 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- Added damage cooldown cost and stun effect to uppercut">
+    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- Added stun behavior">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +151,7 @@
       <workItem from="1769554579576" duration="1371000" />
       <workItem from="1770010521210" duration="5924000" />
       <workItem from="1770067507451" duration="3619000" />
-      <workItem from="1770606688369" duration="2870000" />
+      <workItem from="1770606688369" duration="4183000" />
     </task>
     <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
       <option name="closed" value="true" />
@@ -234,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770611825218</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- Added stun behavior">
+      <option name="closed" value="true" />
+      <created>1770612983274</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1770612983274</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +252,7 @@
     <MESSAGE value="- Added Uppercut Targeting" />
     <MESSAGE value="- trigger passive launch ability" />
     <MESSAGE value="- Added damage cooldown cost and stun effect to uppercut" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added damage cooldown cost and stun effect to uppercut" />
+    <MESSAGE value="- Added stun behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added stun behavior" />
   </component>
 </project>
