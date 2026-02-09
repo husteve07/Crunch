@@ -7,10 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- Added Uppercut Targeting">
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.h" afterDir="false" />
+    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GA_UpperCut_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GA_UpperCut_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +152,8 @@
       <updated>1769554576384</updated>
       <workItem from="1769554579576" duration="1371000" />
       <workItem from="1770010521210" duration="5924000" />
-      <workItem from="1770067507451" duration="3252000" />
+      <workItem from="1770067507451" duration="3619000" />
+      <workItem from="1770606688369" duration="1836000" />
     </task>
     <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
       <option name="closed" value="true" />
@@ -205,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770070661141</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- trigger passive launch ability">
+      <option name="closed" value="true" />
+      <created>1770071715321</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770071715321</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +236,7 @@
     <MESSAGE value="- Fine tuned Minion health bar display" />
     <MESSAGE value="- setup Upper cut ability and key binding" />
     <MESSAGE value="- Added Uppercut Targeting" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added Uppercut Targeting" />
+    <MESSAGE value="- trigger passive launch ability" />
+    <option name="LAST_COMMIT_MESSAGE" value="- trigger passive launch ability" />
   </component>
 </project>
