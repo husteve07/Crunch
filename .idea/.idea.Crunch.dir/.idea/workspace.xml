@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- refactored uppercut combo damage GE&#10;- refined push effect" />
+    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- added VFX for each uppercut stage">
+      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +154,8 @@
       <workItem from="1770067507451" duration="3619000" />
       <workItem from="1770606688369" duration="8747000" />
       <workItem from="1771530894628" duration="2008000" />
-      <workItem from="1771614750517" duration="2229000" />
+      <workItem from="1771614750517" duration="3460000" />
+      <workItem from="1771721460104" duration="3143000" />
     </task>
     <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
       <option name="closed" value="true" />
@@ -263,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771619225627</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- added VFX for each uppercut stage">
+      <option name="closed" value="true" />
+      <created>1771620400190</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1771620400190</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +301,7 @@
     <MESSAGE value="- Added uppercut Combo montage" />
     <MESSAGE value="- added the uppercut combo damage and air hold" />
     <MESSAGE value="- refactored uppercut combo damage GE&#10;- refined push effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="- refactored uppercut combo damage GE&#10;- refined push effect" />
+    <MESSAGE value="- added VFX for each uppercut stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added VFX for each uppercut stage" />
   </component>
 </project>
