@@ -7,11 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- added VFX for each uppercut stage">
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" afterDir="false" />
+    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- created ability gauge widget">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +159,7 @@
       <workItem from="1770606688369" duration="8747000" />
       <workItem from="1771530894628" duration="2008000" />
       <workItem from="1771614750517" duration="3460000" />
-      <workItem from="1771721460104" duration="3143000" />
+      <workItem from="1771721460104" duration="3752000" />
     </task>
     <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
       <option name="closed" value="true" />
@@ -277,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771620400190</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- created ability gauge widget">
+      <option name="closed" value="true" />
+      <created>1771730694635</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1771730694635</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +314,7 @@
     <MESSAGE value="- added the uppercut combo damage and air hold" />
     <MESSAGE value="- refactored uppercut combo damage GE&#10;- refined push effect" />
     <MESSAGE value="- added VFX for each uppercut stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added VFX for each uppercut stage" />
+    <MESSAGE value="- created ability gauge widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="- created ability gauge widget" />
   </component>
 </project>
