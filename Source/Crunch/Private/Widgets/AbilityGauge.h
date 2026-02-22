@@ -7,6 +7,24 @@
 #include "Blueprint/UserWidget.h"
 #include "AbilityGauge.generated.h"
 
+USTRUCT(BlueprintType)
+struct FAbilityWidgetData : public FTableRowBase
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSubclassOf<class UGameplayAbility> AbilityClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName AbilityName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSoftObjectPtr<UTexture2D> Icon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FText Description;
+};
+
 /**
  * 
  */
@@ -18,8 +36,13 @@ class CRUNCH_API UAbilityGauge : public UUserWidget, public IUserObjectListEntry
 	
 public:
 	virtual void NativeOnListItemObjectSet(UObject* ListItemObject) override;
+	void ConfigureWithWidgetData(const FAbilityWidgetData* WidgetData);
 	
 private:
+
+	UPROPERTY(EditDefaultsOnly, Category = "Visual")
+	FName IconMaterialParamName = "Icon";
+	
 	UPROPERTY(meta=(BindWidget))
 	class UImage* Icon;
 
