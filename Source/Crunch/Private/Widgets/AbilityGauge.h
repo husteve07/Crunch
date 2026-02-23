@@ -35,10 +35,16 @@ class CRUNCH_API UAbilityGauge : public UUserWidget, public IUserObjectListEntry
 
 	
 public:
+	virtual void NativeConstruct() override;
 	virtual void NativeOnListItemObjectSet(UObject* ListItemObject) override;
 	void ConfigureWithWidgetData(const FAbilityWidgetData* WidgetData);
 	
 private:
+
+	
+	UPROPERTY(EditDefaultsOnly, Category = "Cooldown")
+	float CooldownUpdateInterval = 0.1f;
+
 
 	UPROPERTY(EditDefaultsOnly, Category = "Visual")
 	FName IconMaterialParamName = "Icon";
@@ -54,4 +60,25 @@ private:
 
 	UPROPERTY(meta=(BindWidget))
 	class UTextBlock* CostText;
+
+	
+	UPROPERTY()
+	class UGameplayAbility* AbilityCDO;
+	
+	
+	void AbilityCommitted(UGameplayAbility* Ability);
+
+	void StartCooldown(float CooldownTimeRemaining, float CooldownDuration);
+
+	float CachedCooldownDuration;
+	float CachedCooldownTimeRemaining;
+
+	FTimerHandle CooldownTimerHandle;
+	FTimerHandle CooldownTimerUpdateHandle;
+
+	FNumberFormattingOptions WholeNumberFormattionOptions;
+	FNumberFormattingOptions TwoDigitNumberFormattingOptions;
+
+	void CooldownFinished();
+	void UpdateCooldown();
 };
