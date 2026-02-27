@@ -43,7 +43,7 @@ void UCAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 
 		
 		FwdSpeed = Velocity.Dot(ControlRot.Vector());
-		RightSpeed = Velocity.Dot(ControlRot.Vector().Cross(FVector::UpVector));
+		RightSpeed = -Velocity.Dot(ControlRot.Vector().Cross(FVector::UpVector));
 	}
 
 	if (OwnerMovementComp)
