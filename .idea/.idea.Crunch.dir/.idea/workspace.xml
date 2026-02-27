@@ -7,11 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- Added Countdown radial shading">
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_GroundBlast.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_GroundBlast.h" afterDir="false" />
+    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- Set up Ground Blast Ability">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +155,7 @@
       <workItem from="1771614750517" duration="3460000" />
       <workItem from="1771721460104" duration="10819000" />
       <workItem from="1771813704386" duration="2359000" />
-      <workItem from="1772173680434" duration="917000" />
+      <workItem from="1772173680434" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
       <option name="closed" value="true" />
@@ -319,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771830719362</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- Set up Ground Blast Ability">
+      <option name="closed" value="true" />
+      <created>1772175202076</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1772175202077</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +355,7 @@
     <MESSAGE value="- implemented ability list view" />
     <MESSAGE value="- added display cooldown cost value&#10;- implemented cost logic" />
     <MESSAGE value="- Added Countdown radial shading" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added Countdown radial shading" />
+    <MESSAGE value="- Set up Ground Blast Ability" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Set up Ground Blast Ability" />
   </component>
 </project>
