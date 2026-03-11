@@ -2,11 +2,11 @@
 
 
 #include "Character/CCharacter.h"
-
 #include "AbilitySystemBlueprintLibrary.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/WidgetComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Crunch/Crunch.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GAS/CAbilitySystemComponent.h"
 #include "GAS/CAttributeSet.h"
@@ -22,6 +22,8 @@ ACCharacter::ACCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_SpringArm, ECR_Ignore);
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Target, ECR_Ignore);
 
 	CAbilitySystemComponent = CreateDefaultSubobject<UCAbilitySystemComponent>("CAbility System Component");
 	CAttributeSet = CreateDefaultSubobject<UCAttributeSet>("CAttribute Set");
@@ -36,8 +38,7 @@ ACCharacter::ACCharacter()
 void ACCharacter::ServerSideInit()
 {
 	CAbilitySystemComponent->InitAbilityActorInfo(this, this);
-	CAbilitySystemComponent->ApplyInitialEffects();
-	CAbilitySystemComponent->GiveInitialAbilities();
+	CAbilitySystemComponent->ServerSideInit();
 }
 
 void ACCharacter::ClientSideInit()
@@ -58,9 +59,7 @@ void ACCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 
 const TMap<ECAbilityInputID, TSubclassOf<UGameplayAbility>>& ACCharacter::GetAbilities() const
 {
-
 	return CAbilitySystemComponent->GetAbilities();
-
 }
 
 // Called when the game starts or when spawned
@@ -101,14 +100,12 @@ UAbilitySystemComponent* ACCharacter::GetAbilitySystemComponent() const
 	return CAbilitySystemComponent;
 }
 
-void ACCharacter::Server_SendGameplayEventToSelf_Implementation(const FGameplayTag& EventTag,
-	const FGameplayEventData& EventData)
+void ACCharacter::Server_SendGameplayEventToSelf_Implementation(const FGameplayTag& EventTag, const FGameplayEventData& EventData)
 {
 	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(this, EventTag, EventData);
 }
 
-bool ACCharacter::Server_SendGameplayEventToSelf_Validate(const FGameplayTag& EventTag,
-	const FGameplayEventData& EventData)
+bool ACCharacter::Server_SendGameplayEventToSelf_Validate(const FGameplayTag& EventTag, const FGameplayEventData& EventData)
 {
 	return true;
 }
@@ -120,6 +117,10 @@ void ACCharacter::BindGASChangeDelegates()
 		CAbilitySystemComponent->RegisterGameplayTagEvent(UCAbilitySystemStatics::GetDeadStatTag()).AddUObject(this, &ACCharacter::DeathTagUpdated);
 		CAbilitySystemComponent->RegisterGameplayTagEvent(UCAbilitySystemStatics::GetStunStatTag()).AddUObject(this, &ACCharacter::StunTagUpdated);
 		CAbilitySystemComponent->RegisterGameplayTagEvent(UCAbilitySystemStatics::GetAimStatTag()).AddUObject(this, &ACCharacter::AimTagUpdated);
+
+		CAbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(UCAttributeSet::GetMoveSpeedAttribute()).AddUObject(this, &ACCharacter::MoveSpeedUpdated);
+		CAbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(UCAttributeSet::GetMaxHealthAttribute()).AddUObject(this, &ACCharacter::MaxHealthUpdated);
+		CAbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(UCAttributeSet::GetMaxManaAttribute()).AddUObject(this, &ACCharacter::MaxManaUpdated);
 	}
 }
 
@@ -163,10 +164,30 @@ void ACCharacter::SetIsAimming(bool bIsAimming)
 	OnAimStateChanged(bIsAimming);
 }
 
-
 void ACCharacter::OnAimStateChanged(bool bIsAimming)
 {
 	//Override in child class
+}
+
+void ACCharacter::MoveSpeedUpdated(const FOnAttributeChangeData& Data)
+{
+	GetCharacterMovement()->MaxWalkSpeed = Data.NewValue;
+}
+
+void ACCharacter::MaxHealthUpdated(const FOnAttributeChangeData& Data)
+{
+	if (IsValid(CAttributeSet))
+	{
+		CAttributeSet->RescaleHealth();
+	}
+}
+
+void ACCharacter::MaxManaUpdated(const FOnAttributeChangeData& Data)
+{
+	if (IsValid(CAttributeSet))
+	{
+		CAttributeSet->RescaleMana();
+	}
 }
 
 void ACCharacter::ConfigureOverHeadStatusWidget()
@@ -238,10 +259,8 @@ void ACCharacter::RespawnImmediately()
 
 void ACCharacter::DeathMontageFinished()
 {
-	if (IsDead())
-	{
+	if(IsDead())
 		SetRagdollEnabled(true);
-	}
 }
 
 void ACCharacter::SetRagdollEnabled(bool bIsEnabled)

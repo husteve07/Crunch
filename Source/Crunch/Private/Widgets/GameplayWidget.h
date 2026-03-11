@@ -17,7 +17,6 @@ class UGameplayWidget : public UUserWidget
 public:
 	virtual void NativeConstruct() override;
 	void ConfigureAbilities(const TMap<ECAbilityInputID, TSubclassOf<class UGameplayAbility>>& Abilities);
-	
 private:
 	UPROPERTY(meta=(BindWidget))
 	class UValueGauge* HealthBar;
@@ -27,6 +26,21 @@ private:
 
 	UPROPERTY(meta=(BindWidget))
 	class UAbilityListView* AbilityListView;
+
+	UPROPERTY(meta=(BindWidget))
+	class UStatsGauge* AttackDamageGauge;
+
+	UPROPERTY(meta=(BindWidget))
+	class UStatsGauge* ArmorGauge;
+
+	UPROPERTY(meta=(BindWidget))
+	class UStatsGauge* MoveSpeedGauge;
+
+	UPROPERTY(meta=(BindWidget))
+	class UStatsGauge* IntenlligenceGauge;
+
+	UPROPERTY(meta=(BindWidget))
+	class UStatsGauge* StrengthGauge;
 
 	UPROPERTY()
 	class UAbilitySystemComponent* OwnerAbilitySystemComponent;

@@ -14,6 +14,7 @@ void UGameplayWidget::NativeConstruct()
 	Super::NativeConstruct();
 
 	OwnerAbilitySystemComponent = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(GetOwningPlayerPawn());
+
 	if (OwnerAbilitySystemComponent)
 	{
 		HealthBar->SetAndBoundToGameplayAttribute(OwnerAbilitySystemComponent, UCAttributeSet::GetHealthAttribute(), UCAttributeSet::GetMaxHealthAttribute());

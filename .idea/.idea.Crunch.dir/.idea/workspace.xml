@@ -7,13 +7,94 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="- added aiming animation">
+    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/AIC_Minion_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/AIC_Minion_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Animations/AM_Minion_Death.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Animations/AM_Minion_Death.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Animations/AM_Minion_Stun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Animations/AM_Minion_Stun.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Animations/Death_E.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Animations/Death_E.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Animations/Stun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Animations/Stun.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_BT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/Minion_BT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/Minion_Barrack_BP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AM_Crunch_Stun.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AM_Crunch_Stun.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AnimBP_Crunch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AnimBP_Crunch.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/BS_Crunch_Aim_Locomotion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_03.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_04.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GameplayEffect/GE_Init.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GameplayEffect/GE_Init.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GroundBlast/Animations/AM_GroundBlast.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GroundBlast/GA_GroundBlast_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GroundBlast/GA_GroundBlast_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GroundBlast/GroundBlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GroundBlast/GroundBlash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/Animation/AM_UpperCut.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/Animation/AM_UpperCut.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GA_UpperCut_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GA_UpperCut_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_CD_BP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Cost.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Cost.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Launch_BP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Launch_Combo_Damage.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Launch_Final_Blow.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Launch_Stunned.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/UpperCut.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/UpperCut.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Framework/CGameMode_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Framework/CGameMode_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/GameplayEffects/GE_Death_Infinite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/GameplayEffects/GE_Death_Infinite.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/GAS/IA_AbilityOne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/GAS/IA_AbilityOne.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/GAS/IA_AbilityTwo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/GAS/IA_AbilityTwo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Hook.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Hook.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Uppercut.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/Ability_Uppercut.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/ComboExample.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Animations/ComboExample.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/AbilityGauge_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/AbilityGauge_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Data/AbilityWidget_DT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Data/AbilityWidget_DT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Materials/AbilityIcon_M.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Materials/AbilityIcon_M.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Materials/AbilityIcon_MI.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGuage/OverheadStatusGuage_Minion_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGuage/OverheadStatusGuage_Minion_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGuage/OverheadStatusGuage_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGuage/OverheadStatusGuage_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGuage/ValueGuage_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/ValueGuage/ValueGuage_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/CAIController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/Minion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/AI/MinionBarrack.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GAP_Launched.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_GroundBlast.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_GroundBlast.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_GroundBlast.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_GroundBlast.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityListView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityListView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityListView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityListView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/ValueGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/ValueGauge.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +121,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../UE_5.4/Engine/Source/Runtime/MovieScene/MovieScene.natvis" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UE_5.4/Engine/Source/Runtime/Renderer/Private/SparseVolumeTexture/SparseVolumeTextureViewerComponent.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -159,7 +241,10 @@
       <workItem from="1771614750517" duration="3460000" />
       <workItem from="1771721460104" duration="10819000" />
       <workItem from="1771813704386" duration="2359000" />
-      <workItem from="1772173680434" duration="4640000" />
+      <workItem from="1772173680434" duration="4878000" />
+      <workItem from="1772341131451" duration="1220000" />
+      <workItem from="1772432155439" duration="1042000" />
+      <workItem from="1773270388579" duration="1741000" />
     </task>
     <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
       <option name="closed" value="true" />
@@ -353,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772177474013</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- add camera aim lerp">
+      <option name="closed" value="true" />
+      <created>1772178667979</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1772178667979</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +480,7 @@
     <MESSAGE value="- added controller input" />
     <MESSAGE value="- Change controller to rotate with the camera when in casting state" />
     <MESSAGE value="- added aiming animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added aiming animation" />
+    <MESSAGE value="- add camera aim lerp" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add camera aim lerp" />
   </component>
 </project>

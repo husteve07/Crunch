@@ -2,9 +2,10 @@
 
 
 #include "GAS/CAbilitySystemStatics.h"
-
-#include "GameplayEffect.h"
 #include "Abilities/GameplayAbility.h"
+#include "AbilitySystemInterface.h"
+#include "AbilitySystemBlueprintLibrary.h"
+#include "AbilitySystemComponent.h"
 
 FGameplayTag UCAbilitySystemStatics::GetBasicAttackAbilityTag()
 {
@@ -14,7 +15,6 @@ FGameplayTag UCAbilitySystemStatics::GetBasicAttackAbilityTag()
 FGameplayTag UCAbilitySystemStatics::GetBasicAttackInputPressedTag()
 {
 	return FGameplayTag::RequestGameplayTag("ability.basicattack.pressed");
-	
 }
 
 FGameplayTag UCAbilitySystemStatics::GetDeadStatTag()
@@ -30,6 +30,60 @@ FGameplayTag UCAbilitySystemStatics::GetStunStatTag()
 FGameplayTag UCAbilitySystemStatics::GetAimStatTag()
 {
 	return FGameplayTag::RequestGameplayTag("stats.aim");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetCameraShakeGameplayCueTag()
+{
+	return FGameplayTag::RequestGameplayTag("GameplayCue.cameraShake");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetHealthFullStatTag()
+{
+	return FGameplayTag::RequestGameplayTag("stats.health.full");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetHealthEmptyStatTag()
+{
+	return FGameplayTag::RequestGameplayTag("stats.health.empty");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetManaFullStatTag()
+{
+	return FGameplayTag::RequestGameplayTag("stats.mana.full");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetManaEmptyStatTag()
+{
+	return FGameplayTag::RequestGameplayTag("stats.mana.empty");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetHeroRoleTag()
+{
+	return FGameplayTag::RequestGameplayTag("role.hero");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetExperienceAttributeTag()
+{
+	return FGameplayTag::RequestGameplayTag("attr.experience");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetGoldAttributeTag()
+{
+	return FGameplayTag::RequestGameplayTag("attr.gold");
+}
+
+bool UCAbilitySystemStatics::IsHero(const AActor* ActorToCheck)
+{
+	const IAbilitySystemInterface* ActorISA = Cast<IAbilitySystemInterface>(ActorToCheck);
+	if (ActorISA)
+	{
+		UAbilitySystemComponent* ActorASC = ActorISA->GetAbilitySystemComponent();
+		if (ActorASC)
+		{
+			return ActorASC->HasMatchingGameplayTag(GetHeroRoleTag());
+		}
+	}
+	return false;
 }
 
 float UCAbilitySystemStatics::GetStaticCooldownDurationForAbility(const UGameplayAbility* Ability)

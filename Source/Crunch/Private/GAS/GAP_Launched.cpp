@@ -1,10 +1,8 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "GAP_Launched.h"
-
-#include "CAbilitySystemStatics.h"
-
+#include "GAS/GAP_Launched.h"
+#include "GAS/CAbilitySystemStatics.h"
 
 UGAP_Launched::UGAP_Launched()
 {
@@ -12,9 +10,8 @@ UGAP_Launched::UGAP_Launched()
 	FAbilityTriggerData TriggerData;
 	TriggerData.TriggerSource = EGameplayAbilityTriggerSource::GameplayEvent;
 	TriggerData.TriggerTag = GetLauchedAbilityActiationTag();
-	
-	ActivationBlockedTags.RemoveTag(UCAbilitySystemStatics::GetStunStatTag());
 
+	ActivationBlockedTags.RemoveTag(UCAbilitySystemStatics::GetStunStatTag());
 	AbilityTriggers.Add(TriggerData);
 }
 

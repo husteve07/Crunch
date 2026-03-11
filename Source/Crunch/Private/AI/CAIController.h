@@ -7,7 +7,6 @@
 #include "GameplayTagContainer.h"
 #include "CAIController.generated.h"
 
-struct FAIStimulus;
 /**
  * 
  */
@@ -52,5 +51,5 @@ private:
 	void PawnDeadTagUpdated(const FGameplayTag Tag, int32 Count);
 	void PawnStunTagUpdated(const FGameplayTag Tag, int32 Count);
 
-	bool bIsPawnDead;
+	bool bIsPawnDead = false;
 };

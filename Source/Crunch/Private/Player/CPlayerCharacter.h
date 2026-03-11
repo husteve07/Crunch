@@ -29,13 +29,13 @@ private:
 	FVector GetLookRightDir() const;
 	FVector GetLookFwdDir() const;
 	FVector GetMoveFwdDir() const;
-
-	
 	/*************************************************************/
 	/*                       Gameplay Ability                    */
 	/*************************************************************/
 private:
 	virtual void OnAimStateChanged(bool bIsAimming) override;
+	UPROPERTY()
+	class UCHeroAttributeSet* HeroAttributeSet;
 
 	/*************************************************************/
 	/*                           Input                           */
@@ -60,20 +60,17 @@ private:
 	void HandleMoveInput(const FInputActionValue& InputActionValue);
 	void HandleAbilityInput(const FInputActionValue& InputActionValue, ECAbilityInputID InputID);
 	void SetInputEnabledFromPlayerController(bool bEnabled);
-	
 	/*************************************************************/
 	/*                           Stun                            */
 	/*************************************************************/
 	virtual void OnStun() override;
 	virtual void OnRecoverFromStun() override;
-	
 	/*************************************************************/
 	/*                      Death and Respawn                    */
 	/*************************************************************/
 
 	virtual void OnDead() override;
 	virtual void OnRespawn() override;
-
 	/*************************************************************/
 	/*                      Camer View                           */
 	/*************************************************************/
@@ -88,5 +85,4 @@ private:
 
 	void LerpCameraToLocalOffsetLocation(const FVector& Goal);
 	void TickCameraLocalOffsetLerp(FVector Goal);
-	
 };

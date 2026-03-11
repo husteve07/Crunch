@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GAS/CGameplayAbilityTypes.h"
 #include "GameFramework/Character.h"
+#include "GameplayEffectTypes.h"
 #include "GameplayTagContainer.h"
 #include "AbilitySystemInterface.h"
 #include "GenericTeamAgentInterface.h"
-#include "GAS/CGameplayAbilityTypes.h"
 #include "CCharacter.generated.h"
 
 UCLASS()
@@ -24,7 +25,6 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 	const TMap<ECAbilityInputID, TSubclassOf<UGameplayAbility>>& GetAbilities() const;
 
-	
 protected:
 	// Called when the game starts or when spawned
 
@@ -53,8 +53,10 @@ private:
 	void AimTagUpdated(const FGameplayTag Tag, int32 NewCount);
 	void SetIsAimming(bool bIsAimming);
 	virtual void OnAimStateChanged(bool bIsAimming);
+	void MoveSpeedUpdated(const FOnAttributeChangeData& Data);
+	void MaxHealthUpdated(const FOnAttributeChangeData& Data);
+	void MaxManaUpdated(const FOnAttributeChangeData& Data);
 
-	
 	UPROPERTY(VisibleDefaultsOnly, Category = "Gameplay Ability")
 	class UCAbilitySystemComponent* CAbilitySystemComponent;
 	UPROPERTY()
@@ -77,7 +79,6 @@ private:
 
 	void UpdateHeadGaugeVisibility();
 	void SetStatusGaugeEnabled(bool bIsEnabled);
-
 	/**********************************************************************/
 	/*                             Stun                                   */
 	/**********************************************************************/
@@ -87,7 +88,6 @@ private:
 
 	virtual void OnStun();
 	virtual void OnRecoverFromStun();
-	
 	/**********************************************************************/
 	/*                             Death and Respawn                      */
 	/**********************************************************************/

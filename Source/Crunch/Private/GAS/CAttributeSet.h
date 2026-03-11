@@ -21,9 +21,14 @@ class UCAttributeSet : public UAttributeSet
 	GENERATED_BODY()
 public:
     ATTRIBUTE_ACCESSORS(UCAttributeSet, Health)
+    ATTRIBUTE_ACCESSORS(UCAttributeSet, CachedHealthPercent)
+    ATTRIBUTE_ACCESSORS(UCAttributeSet, CachedManaPercent)
     ATTRIBUTE_ACCESSORS(UCAttributeSet, MaxHealth)
     ATTRIBUTE_ACCESSORS(UCAttributeSet, Mana)
     ATTRIBUTE_ACCESSORS(UCAttributeSet, MaxMana)
+    ATTRIBUTE_ACCESSORS(UCAttributeSet, AttackDamage)
+    ATTRIBUTE_ACCESSORS(UCAttributeSet, Armor)
+    ATTRIBUTE_ACCESSORS(UCAttributeSet, MoveSpeed)
 	virtual void GetLifetimeReplicatedProps( TArray< class FLifetimeProperty > & OutLifetimeProps ) const override;
 	/**
 	 *	An "On Aggregator Change" type of event could go here, and that could be called when active gameplay effects are added or removed to an attribute aggregator.
@@ -45,6 +50,9 @@ public:
 	 */
 	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
 
+	void RescaleHealth();
+	void RescaleMana();
+
 private:
 	UPROPERTY(ReplicatedUsing = OnRep_Health)
 	FGameplayAttributeData Health;
@@ -58,12 +66,39 @@ private:
 	UPROPERTY(ReplicatedUsing = OnRep_MaxMana)
 	FGameplayAttributeData MaxMana;
 
+	UPROPERTY(ReplicatedUsing = OnRep_AttackDamage)
+	FGameplayAttributeData AttackDamage;
+
+	UPROPERTY(ReplicatedUsing = OnRep_Armor)
+	FGameplayAttributeData Armor;
+
+	UPROPERTY(ReplicatedUsing = OnRep_MoveSpeed)
+	FGameplayAttributeData MoveSpeed;
+
+	UPROPERTY()
+	FGameplayAttributeData CachedHealthPercent;
+
+	UPROPERTY()
+	FGameplayAttributeData CachedManaPercent;
+
 	UFUNCTION()
 	void OnRep_Health(const FGameplayAttributeData& OldValue);
+
 	UFUNCTION()
 	void OnRep_MaxHealth(const FGameplayAttributeData& OldValue);
+
 	UFUNCTION()
 	void OnRep_Mana(const FGameplayAttributeData& OldValue);
+
 	UFUNCTION()
 	void OnRep_MaxMana(const FGameplayAttributeData& OldValue);
+
+	UFUNCTION()
+	void OnRep_AttackDamage(const FGameplayAttributeData& OldValue);
+
+	UFUNCTION()
+	void OnRep_Armor(const FGameplayAttributeData& OldValue);
+
+	UFUNCTION()
+	void OnRep_MoveSpeed(const FGameplayAttributeData& OldValue);
 };

@@ -39,7 +39,7 @@ private:
 	
 	UPROPERTY(EditAnywhere, Category = "Visual")
 	bool bProgressBarVisible = true;
-	
+
 	UPROPERTY(VisibleAnywhere, meta=(BindWidget))
 	class UProgressBar* ProgressBar;
 

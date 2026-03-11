@@ -1,14 +1,12 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "UpperCut.h"
-
-#include "CAbilitySystemStatics.h"
-#include "GameplayTagsManager.h"
-#include "GA_Combo.h"
+#include "GAS/UpperCut.h"
 #include "Abilities/Tasks/AbilityTask_PlayMontageAndWait.h"
 #include "Abilities/Tasks/AbilityTask_WaitGameplayEvent.h"
-
+#include "GAS/CAbilitySystemStatics.h"
+#include "GAS/GA_Combo.h"
+#include "GameplayTagsManager.h"
 
 UUpperCut::UUpperCut()
 {
@@ -31,12 +29,14 @@ void UUpperCut::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const F
 		PlayUpperCutMontageTask->OnInterrupted.AddDynamic(this, &UUpperCut::K2_EndAbility);
 		PlayUpperCutMontageTask->OnCompleted.AddDynamic(this, &UUpperCut::K2_EndAbility);
 		PlayUpperCutMontageTask->ReadyForActivation();
+
 		UAbilityTask_WaitGameplayEvent* WaitLaunchEventTask = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, GetUpperCutLaunchTag());
 		WaitLaunchEventTask->EventReceived.AddDynamic(this, &UUpperCut::StartLaunching);
 		WaitLaunchEventTask->ReadyForActivation();
 	}
 	NextComboName = NAME_None;
 }
+
 
 FGameplayTag UUpperCut::GetUpperCutLaunchTag()
 {
@@ -68,10 +68,11 @@ void UUpperCut::StartLaunching(FGameplayEventData EventData)
 			ApplyGameplayEffectToHitResultActor(HitResult, LaunchDamageEffect, GetAbilityLevel(CurrentSpecHandle, CurrentActorInfo));
 		}
 	}
-	
+
 	UAbilityTask_WaitGameplayEvent* WaitComboChangeEvent = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, UGA_Combo::GetComboChangedEventTag(), nullptr, false, false);
 	WaitComboChangeEvent->EventReceived.AddDynamic(this, &UUpperCut::HandleComboChangeEvent);
 	WaitComboChangeEvent->ReadyForActivation();
+
 	UAbilityTask_WaitGameplayEvent* WaitComboCommitEvent = UAbilityTask_WaitGameplayEvent::WaitGameplayEvent(this, UCAbilitySystemStatics::GetBasicAttackInputPressedTag());
 	WaitComboCommitEvent->EventReceived.AddDynamic(this, &UUpperCut::HandleComboCommitEvent);
 	WaitComboCommitEvent->ReadyForActivation();
@@ -125,6 +126,7 @@ void UUpperCut::HandleComboDamageEvent(FGameplayEventData EventData)
 		{
 			return;
 		}
+
 		for (FHitResult& HitResult : TargetHitResults)
 		{
 			FVector PushVel = GetAvatarActorFromActorInfo()->GetActorTransform().TransformVector(EffectDef->PushVelocity);

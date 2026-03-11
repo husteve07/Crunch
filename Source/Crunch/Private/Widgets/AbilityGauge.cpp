@@ -1,14 +1,14 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "AbilityGauge.h"
-
+#include "Widgets/AbilityGauge.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
+
 #include "Abilities/GameplayAbility.h"
+#include "GAS/CAbilitySystemStatics.h"
 #include "Components/Image.h"
 #include "Components/TextBlock.h"
-#include "GAS/CAbilitySystemStatics.h"
 
 void UAbilityGauge::NativeConstruct()
 {
@@ -82,5 +82,6 @@ void UAbilityGauge::UpdateCooldown()
 	CachedCooldownTimeRemaining -= CooldownUpdateInterval;
 	FNumberFormattingOptions* FormattingOptions = CachedCooldownTimeRemaining > 1 ? &WholeNumberFormattionOptions : &TwoDigitNumberFormattingOptions;
 	CooldownCounterText->SetText(FText::AsNumber(CachedCooldownTimeRemaining, FormattingOptions));
+
 	Icon->GetDynamicMaterial()->SetScalarParameterValue(CooldownPercentParamname, 1.0f - CachedCooldownTimeRemaining / CachedCooldownDuration);
 }

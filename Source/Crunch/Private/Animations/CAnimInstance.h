@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameplayTagContainer.h"
 #include "Animation/AnimInstance.h"
+#include "GameplayTagContainer.h"
 #include "CAnimInstance.generated.h"
 
 /**
@@ -36,7 +36,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, meta=(BlueprintThreadSafe))
 	FORCEINLINE float GetYawSpeed() const { return YawSpeed; }
-	
+
 	UFUNCTION(BlueprintCallable, meta=(BlueprintThreadSafe))
 	FORCEINLINE float GetFwdSpeed() const { return FwdSpeed; }
 
@@ -54,7 +54,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, meta=(BlueprintThreadSafe))
 	FORCEINLINE bool GetIsAimming() const { return bIsAimming; }
-	
+
 	UFUNCTION(BlueprintCallable, meta=(BlueprintThreadSafe))
 	FORCEINLINE float GetLookYawOffset() const { return LookRotOffset.Yaw; }
 
@@ -64,9 +64,7 @@ public:
 	UFUNCTION(BlueprintCallable, meta=(BlueprintThreadSafe))
 	bool ShouldDoFullBody() const;
 private:
-	
 	void OwnerAimTagChanged(const FGameplayTag Tag, int32 NewCount);
-	
 	UPROPERTY()
 	class ACharacter* OwnerCharacter;
 

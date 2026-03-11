@@ -2,10 +2,8 @@
 
 
 #include "Animations/CAnimInstance.h"
-
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
-#include "GameplayTagContainer.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GAS/CAbilitySystemStatics.h"
@@ -41,7 +39,6 @@ void UCAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		FRotator ControlRot = OwnerCharacter->GetBaseAimRotation();
 		LookRotOffset = UKismetMathLibrary::NormalizedDeltaRotator(ControlRot, BodyRot);
 
-		
 		FwdSpeed = Velocity.Dot(ControlRot.Vector());
 		RightSpeed = -Velocity.Dot(ControlRot.Vector().Cross(FVector::UpVector));
 	}
@@ -56,7 +53,6 @@ void UCAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 {
 
 }
-
 
 bool UCAnimInstance::ShouldDoFullBody() const
 {

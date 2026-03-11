@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -27,7 +27,7 @@ public:
 private:
 	UPROPERTY(EditAnywhere, Category = "Spawn")
 	FGenericTeamId BarrackTeamId;
-
+	
 	UPROPERTY(EditAnywhere, Category = "Spawn")
 	int MinionPerGroup = 3;
 
@@ -55,4 +55,5 @@ private:
 	AMinion* GetNextAvaliableMinion() const;
 
 	FTimerHandle SpawnIntervalTimerHandle;
+
 };

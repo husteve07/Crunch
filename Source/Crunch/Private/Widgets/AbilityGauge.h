@@ -1,10 +1,10 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Blueprint/IUserObjectListEntry.h"
 #include "Blueprint/UserWidget.h"
+#include "Blueprint/IUserObjectListEntry.h"
 #include "AbilityGauge.generated.h"
 
 USTRUCT(BlueprintType)
@@ -29,22 +29,16 @@ struct FAbilityWidgetData : public FTableRowBase
  * 
  */
 UCLASS()
-class CRUNCH_API UAbilityGauge : public UUserWidget, public IUserObjectListEntry
+class UAbilityGauge : public UUserWidget, public IUserObjectListEntry
 {
 	GENERATED_BODY()
-
-	
 public:
 	virtual void NativeConstruct() override;
 	virtual void NativeOnListItemObjectSet(UObject* ListItemObject) override;
 	void ConfigureWithWidgetData(const FAbilityWidgetData* WidgetData);
-	
 private:
-
-	
 	UPROPERTY(EditDefaultsOnly, Category = "Cooldown")
 	float CooldownUpdateInterval = 0.1f;
-
 
 	UPROPERTY(EditDefaultsOnly, Category = "Visual")
 	FName IconMaterialParamName = "Icon";
@@ -52,7 +46,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Visual")
 	FName CooldownPercentParamname = "Percent";
 
-	
 	UPROPERTY(meta=(BindWidget))
 	class UImage* Icon;
 
@@ -65,11 +58,9 @@ private:
 	UPROPERTY(meta=(BindWidget))
 	class UTextBlock* CostText;
 
-	
 	UPROPERTY()
 	class UGameplayAbility* AbilityCDO;
-	
-	
+
 	void AbilityCommitted(UGameplayAbility* Ability);
 
 	void StartCooldown(float CooldownTimeRemaining, float CooldownDuration);

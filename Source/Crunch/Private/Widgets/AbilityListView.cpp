@@ -1,12 +1,11 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "AbilityListView.h"
-
-#include "AbilityGauge.h"
+#include "Widgets/AbilityListView.h"
 #include "Abilities/GameplayAbility.h"
+#include "Widgets/AbilityGauge.h"
 
-void UAbilityListView::ConfigureAbilities(const TMap<ECAbilityInputID, TSubclassOf<class UGameplayAbility>>& Abilities)
+void UAbilityListView::ConfigureAbilities(const TMap<ECAbilityInputID, TSubclassOf<UGameplayAbility>>& Abilities)
 {
 	OnEntryWidgetGenerated().AddUObject(this, &UAbilityListView::AbilityGaugeGenerated);
 	for (const TPair<ECAbilityInputID, TSubclassOf<UGameplayAbility>>& AbilityPair : Abilities)
@@ -25,8 +24,7 @@ void UAbilityListView::AbilityGaugeGenerated(UUserWidget& Widget)
 	}
 }
 
-const struct FAbilityWidgetData* UAbilityListView::FindWidgetDataForAbility(
-	const TSubclassOf<UGameplayAbility>& AbilityClass) const
+const FAbilityWidgetData* UAbilityListView::FindWidgetDataForAbility(const TSubclassOf<UGameplayAbility>& AbilityClass) const
 {
 	if (!AbilityDataTable)
 		return nullptr;
