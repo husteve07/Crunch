@@ -7,56 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="">
+    <list default="true" id="b1109b85-5d99-4a14-9e6b-e12c8ef34ef4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/Animations/AM_Combo_Minion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/Animations/AM_Combo_Minion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/GE_Combo_Damage_Minion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/Minions/GameplayAbility/Combo/GE_Combo_Damage_Minion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/Animations/AM_Combo_Crunch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/Animations/AM_Combo_Crunch.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_02.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_03.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/Combo/GameplayEffects/GE_Damage_Crunch_Combo_04.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/Animation/AM_UpperCut.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/Animation/AM_UpperCut.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Combo_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Combo_Damage.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Cooldown.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Cooldown.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Cost.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Cost.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_FinalBlow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_FinalBlow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Launch_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/UpperCut/GE_UpperCut_Launch_Damage.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/Data/DT_HeroBaseStats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/Data/DT_HeroBaseStats.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayCueNotifies/GC_hit.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IM_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_PlayerController.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/CPlayerController_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/CPlayerController_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/AbilityGauge_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/AbilityGauge_WBP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Materials/AbilityIcon_M.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Materials/AbilityIcon_M.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crunch.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Crunch.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendTargetGroup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendTargetGroup.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendTargetGroup.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/AN_SendTargetGroup.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/GA_Combo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/UpperCut.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" afterDir="false" />
     </list>
@@ -71,49 +31,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;husteve07&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "husteve07"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/husteve07/Crunch.git&quot;,
-    &quot;accountId&quot;: &quot;e5bc6b62-e6e0-4a00-941e-b9676afb763a&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/husteve07/Crunch.git",
+    "accountId": "e5bc6b62-e6e0-4a00-941e-b9676afb763a"
   }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../UE_5.4/Engine/Source/Runtime/MovieScene/MovieScene.natvis" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../UE_5.4/Engine/Source/Runtime/Renderer/Private/SparseVolumeTexture/SparseVolumeTextureViewerComponent.h" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="38rPAgDBywfsGNC0wrvIBxoP3qr" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3FWNKjq4mDMVgWcT3Z7ysABbwY3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Uproject.Crunch.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Uproject.Crunch.executor": "Run",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Crunch" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -192,268 +144,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9c004b3-c734-460b-a995-241fc9940d4c" name="Changes" comment="" />
-      <created>1769554576384</created>
+      <changelist id="b1109b85-5d99-4a14-9e6b-e12c8ef34ef4" name="Changes" comment="" />
+      <created>1782186804673</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1769554576384</updated>
-      <workItem from="1769554579576" duration="1371000" />
-      <workItem from="1770010521210" duration="5924000" />
-      <workItem from="1770067507451" duration="3619000" />
-      <workItem from="1770606688369" duration="8747000" />
-      <workItem from="1771530894628" duration="2008000" />
-      <workItem from="1771614750517" duration="3460000" />
-      <workItem from="1771721460104" duration="10819000" />
-      <workItem from="1771813704386" duration="2359000" />
-      <workItem from="1772173680434" duration="4878000" />
-      <workItem from="1772341131451" duration="1220000" />
-      <workItem from="1772432155439" duration="1042000" />
-      <workItem from="1773270388579" duration="2442000" />
-      <workItem from="1776745730031" duration="671000" />
+      <updated>1782186804673</updated>
+      <workItem from="1782186808275" duration="809000" />
     </task>
-    <task id="LOCAL-00001" summary="- Implemented Minion Barrack &#10;- a shit ton of refactoring">
-      <option name="closed" value="true" />
-      <created>1769555933805</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1769555933805</updated>
-    </task>
-    <task id="LOCAL-00002" summary="- Added Goal to the minions">
-      <option name="closed" value="true" />
-      <created>1770013538901</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1770013538901</updated>
-    </task>
-    <task id="LOCAL-00003" summary="- Improved behavior of minions">
-      <option name="closed" value="true" />
-      <created>1770014117555</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1770014117555</updated>
-    </task>
-    <task id="LOCAL-00004" summary="- Fixed ragdoll animation carrying on to minion respawn bug">
-      <option name="closed" value="true" />
-      <created>1770014885486</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1770014885486</updated>
-    </task>
-    <task id="LOCAL-00005" summary="- Fine tuned Minion health bar display">
-      <option name="closed" value="true" />
-      <created>1770016645298</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1770016645298</updated>
-    </task>
-    <task id="LOCAL-00006" summary="- setup Upper cut ability and key binding">
-      <option name="closed" value="true" />
-      <created>1770069863762</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1770069863762</updated>
-    </task>
-    <task id="LOCAL-00007" summary="- Added Uppercut Targeting">
-      <option name="closed" value="true" />
-      <created>1770070661141</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1770070661141</updated>
-    </task>
-    <task id="LOCAL-00008" summary="- trigger passive launch ability">
-      <option name="closed" value="true" />
-      <created>1770071715321</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1770071715321</updated>
-    </task>
-    <task id="LOCAL-00009" summary="- Added damage cooldown cost and stun effect to uppercut">
-      <option name="closed" value="true" />
-      <created>1770611825218</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1770611825218</updated>
-    </task>
-    <task id="LOCAL-00010" summary="- Added stun behavior">
-      <option name="closed" value="true" />
-      <created>1770612983274</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1770612983274</updated>
-    </task>
-    <task id="LOCAL-00011" summary="- Added proper Stun animations for crunch&amp;minion">
-      <option name="closed" value="true" />
-      <created>1770616176889</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1770616176889</updated>
-    </task>
-    <task id="LOCAL-00012" summary="- Added uppercut Combo montage">
-      <option name="closed" value="true" />
-      <created>1770624716723</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1770624716723</updated>
-    </task>
-    <task id="LOCAL-00013" summary="- added the uppercut combo damage and air hold">
-      <option name="closed" value="true" />
-      <created>1770626360601</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1770626360601</updated>
-    </task>
-    <task id="LOCAL-00014" summary="- refactored uppercut combo damage GE&#10;- refined push effect">
-      <option name="closed" value="true" />
-      <created>1771619225627</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1771619225627</updated>
-    </task>
-    <task id="LOCAL-00015" summary="- added VFX for each uppercut stage">
-      <option name="closed" value="true" />
-      <created>1771620400190</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1771620400190</updated>
-    </task>
-    <task id="LOCAL-00016" summary="- created ability gauge widget">
-      <option name="closed" value="true" />
-      <created>1771730694635</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1771730694635</updated>
-    </task>
-    <task id="LOCAL-00017" summary="- plumbbed ability from ASC all the way to gameplaywidget">
-      <option name="closed" value="true" />
-      <created>1771731332199</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1771731332199</updated>
-    </task>
-    <task id="LOCAL-00018" summary="- implemented ability list view">
-      <option name="closed" value="true" />
-      <created>1771733495256</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1771733495256</updated>
-    </task>
-    <task id="LOCAL-00019" summary="- added display cooldown cost value&#10;- implemented cost logic">
-      <option name="closed" value="true" />
-      <created>1771814441759</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1771814441759</updated>
-    </task>
-    <task id="LOCAL-00020" summary="- Added Countdown radial shading">
-      <option name="closed" value="true" />
-      <created>1771830719362</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1771830719362</updated>
-    </task>
-    <task id="LOCAL-00021" summary="- Set up Ground Blast Ability">
-      <option name="closed" value="true" />
-      <created>1772175202076</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1772175202077</updated>
-    </task>
-    <task id="LOCAL-00022" summary="- added controller input">
-      <option name="closed" value="true" />
-      <created>1772175873888</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1772175873888</updated>
-    </task>
-    <task id="LOCAL-00023" summary="- Change controller to rotate with the camera when in casting state">
-      <option name="closed" value="true" />
-      <created>1772176260199</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1772176260199</updated>
-    </task>
-    <task id="LOCAL-00024" summary="- added aiming animation">
-      <option name="closed" value="true" />
-      <created>1772177474013</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1772177474013</updated>
-    </task>
-    <task id="LOCAL-00025" summary="- add camera aim lerp">
-      <option name="closed" value="true" />
-      <created>1772178667979</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1772178667979</updated>
-    </task>
-    <task id="LOCAL-00026" summary="- for detailed change log refer to the game-and-art-wip channel on discord">
-      <option name="closed" value="true" />
-      <created>1773272359566</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1773272359566</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="- Added Goal to the minions" />
-    <MESSAGE value="- Improved behavior of minions" />
-    <MESSAGE value="- Fixed ragdoll animation carrying on to minion respawn bug" />
-    <MESSAGE value="- Fine tuned Minion health bar display" />
-    <MESSAGE value="- setup Upper cut ability and key binding" />
-    <MESSAGE value="- Added Uppercut Targeting" />
-    <MESSAGE value="- trigger passive launch ability" />
-    <MESSAGE value="- Added damage cooldown cost and stun effect to uppercut" />
-    <MESSAGE value="- Added stun behavior" />
-    <MESSAGE value="- Added proper Stun animations for crunch&amp;minion" />
-    <MESSAGE value="- Added uppercut Combo montage" />
-    <MESSAGE value="- added the uppercut combo damage and air hold" />
-    <MESSAGE value="- refactored uppercut combo damage GE&#10;- refined push effect" />
-    <MESSAGE value="- added VFX for each uppercut stage" />
-    <MESSAGE value="- created ability gauge widget" />
-    <MESSAGE value="- plumbbed ability from ASC all the way to gameplaywidget" />
-    <MESSAGE value="- implemented ability list view" />
-    <MESSAGE value="- added display cooldown cost value&#10;- implemented cost logic" />
-    <MESSAGE value="- Added Countdown radial shading" />
-    <MESSAGE value="- Set up Ground Blast Ability" />
-    <MESSAGE value="- added controller input" />
-    <MESSAGE value="- Change controller to rotate with the camera when in casting state" />
-    <MESSAGE value="- added aiming animation" />
-    <MESSAGE value="- add camera aim lerp" />
-    <MESSAGE value="- for detailed change log refer to the game-and-art-wip channel on discord" />
-    <option name="LAST_COMMIT_MESSAGE" value="- for detailed change log refer to the game-and-art-wip channel on discord" />
   </component>
 </project>
