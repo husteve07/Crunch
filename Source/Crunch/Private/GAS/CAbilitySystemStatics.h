@@ -21,6 +21,7 @@ class UCAbilitySystemStatics : public UBlueprintFunctionLibrary
 public:
 	static FGameplayTag GetBasicAttackAbilityTag();
 	static FGameplayTag GetBasicAttackInputPressedTag();
+	static FGameplayTag GetBasicAttackInputReleasedTag();
 	static FGameplayTag GetDeadStatTag();
 	static FGameplayTag GetStunStatTag();
 	static FGameplayTag GetAimStatTag();
@@ -32,8 +33,12 @@ public:
 	static FGameplayTag GetHeroRoleTag();
 	static FGameplayTag GetExperienceAttributeTag();
 	static FGameplayTag GetGoldAttributeTag();
+	static FGameplayTag GetCrosshairTag();
+	static FGameplayTag GetTargetUpdatedTag();
 
+	static bool IsActorDead(const AActor* ActorToCheck);
 	static bool IsHero(const AActor* ActorToCheck);
+	static bool ActorHasTag(const AActor* ActorToCheck, const FGameplayTag& Tag);
 	static bool IsAbilityAtMaxLevel(const FGameplayAbilitySpec& Spec);
 
 	static float GetStaticCooldownDurationForAbility(const UGameplayAbility* Ability);

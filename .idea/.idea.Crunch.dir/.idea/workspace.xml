@@ -7,18 +7,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1109b85-5d99-4a14-9e6b-e12c8ef34ef4" name="Changes" comment="">
+    <list default="true" id="7ca81a70-4d64-4946-bd85-3c0eca52885e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IM_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_PlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AnimBP_Crunch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AnimBP_Crunch.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Framework/CGameMode_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Framework/CGameMode_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Gameplay/StormCore/StormCore_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Gameplay/StormCore/StormCore_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/Data/DT_HeroBaseStats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/Data/DT_HeroBaseStats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/Data/PA_HeroAbilitySystemGenerics.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/Data/PA_HeroAbilitySystemGenerics.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/CPlayerController_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/CPlayerController_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Data/AbilityWidget_DT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Data/AbilityWidget_DT.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_RenderActor_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_RenderActor_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_WBP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/RenderTarget_Mtl.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/RenderTarget_Mtl.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/RenderActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/RenderActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/SkeletalMeshRenderWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/SkeletalMeshRenderWidget.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +68,7 @@
   "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="3FWNKjq4mDMVgWcT3Z7ysABbwY3" />
+  <component name="ProjectId" id="3FhjcvWDct4tzOXYfPMsiLJrSlQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -144,12 +165,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b1109b85-5d99-4a14-9e6b-e12c8ef34ef4" name="Changes" comment="" />
-      <created>1782186804673</created>
+      <changelist id="7ca81a70-4d64-4946-bd85-3c0eca52885e" name="Changes" comment="" />
+      <created>1782534279912</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1782186804673</updated>
-      <workItem from="1782186808275" duration="809000" />
+      <updated>1782534279912</updated>
+      <workItem from="1782534282178" duration="599000" />
     </task>
     <servers />
   </component>
