@@ -6,6 +6,8 @@
 #include "AbilitySystemInterface.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
+#include "AbilitySystemGlobals.h"
+#include "GameplayCueManager.h"
 
 FGameplayTag UCAbilitySystemStatics::GetBasicAttackAbilityTag()
 {
@@ -35,6 +37,11 @@ FGameplayTag UCAbilitySystemStatics::GetStunStatTag()
 FGameplayTag UCAbilitySystemStatics::GetAimStatTag()
 {
 	return FGameplayTag::RequestGameplayTag("stats.aim");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetFocusStatTag()
+{
+	return FGameplayTag::RequestGameplayTag("stats.focus");
 }
 
 FGameplayTag UCAbilitySystemStatics::GetCameraShakeGameplayCueTag()
@@ -85,6 +92,16 @@ FGameplayTag UCAbilitySystemStatics::GetCrosshairTag()
 FGameplayTag UCAbilitySystemStatics::GetTargetUpdatedTag()
 {
 	return FGameplayTag::RequestGameplayTag("target.updated");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetGenericDamagePointTag()
+{
+	return FGameplayTag::RequestGameplayTag("ability.generic.damage");
+}
+
+FGameplayTag UCAbilitySystemStatics::GetGenericTargetPointTag()
+{
+	return FGameplayTag::RequestGameplayTag("ability.generic.target");
 }
 
 bool UCAbilitySystemStatics::IsActorDead(const AActor* ActorToCheck)
@@ -224,3 +241,11 @@ float UCAbilitySystemStatics::GetCooldownRemainingFor(const UGameplayAbility* Ab
 	return CooldownRemaining;
 }
 
+void UCAbilitySystemStatics::SendLocalGameplayCue(AActor* CueTargetActor, const FHitResult& HitResult, const FGameplayTag& GameplayCueTag)
+{
+	FGameplayCueParameters CueParams;
+	CueParams.Location = HitResult.ImpactPoint;
+	CueParams.Normal = HitResult.ImpactNormal;
+
+	UAbilitySystemGlobals::Get().GetGameplayCueManager()->HandleGameplayCue(CueTargetActor, GameplayCueTag, EGameplayCueEvent::Executed, CueParams);
+}

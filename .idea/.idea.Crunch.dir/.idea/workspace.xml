@@ -7,39 +7,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca81a70-4d64-4946-bd85-3c0eca52885e" name="Changes" comment="">
+    <list default="true" id="bc996a13-437e-4498-8d2b-04bd5f214b4c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AnimBP_Crunch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Animation/AnimBP_Crunch.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/Crunch_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GameplayEffect/GE_Init.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Crunch/GameplayAbility/GameplayEffect/GE_Init.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Framework/CGameMode_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Framework/CGameMode_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Gameplay/StormCore/StormCore_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Gameplay/StormCore/StormCore_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/Data/DT_HeroBaseStats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/Data/DT_HeroBaseStats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Gameplay/StormCore/Animation/AM_Capture.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Gameplay/StormCore/Animation/AM_Capture.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Gameplay/StormCore/Animation/AM_Expand.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Gameplay/StormCore/Animation/AM_Expand.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilities/Data/PA_HeroAbilitySystemGenerics.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilities/Data/PA_HeroAbilitySystemGenerics.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IM_Gameplay.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/GameLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonCrunch/Characters/Heroes/Crunch/Meshes/Crunch_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonMinions/Characters/Minions/Down_Minions/Meshes/Minion_Lane_Melee_Dawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonMinions/Characters/Minions/Down_Minions/Meshes/Minion_Lane_Melee_Dawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ParagonMinions/Characters/Minions/Dusk_Minions/Meshes/Minion_Lane_Melee_Dusk.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ParagonMinions/Characters/Minions/Dusk_Minions/Meshes/Minion_Lane_Melee_Dusk.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Data/AbilityWidget_DT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Abilities/Data/AbilityWidget_DT.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/GameplayWdiget_WBP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_RenderActor_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_RenderActor_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/Headshot_WBP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/RenderTarget_Mtl.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Gameplay/Headshot/RenderTarget_Mtl.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Animations/CAnimInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/Influence/M_StormInfluence.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/Influence/M_StormInfluence.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/MInst_stormCore.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/MInst_stormCore.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/M_StormCore.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/M_StormCore.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_BaseColor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_BaseColor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_Emissive.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_Emissive.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_Normal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_Normal.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_OcclusionRoughnessMetallic.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/Material/stormCore/StormCore_stormCore_OcclusionRoughnessMetallic.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/animations/storm_core_core_collaps.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/animations/storm_core_core_collaps.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/animations/storm_core_core_expand.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/animations/storm_core_core_expand.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/animations/storm_core_core_rolling.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/animations/storm_core_core_rolling.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/storm_core.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/storm_core.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/storm_core_PhysicsAsset.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/storm_core_PhysicsAsset.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/storm_core/storm_core_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/storm_core/storm_core_Skeleton.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Character/CCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/StormCore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/StormCore.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAbilitySystemStatics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CAttributeSet.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/GAS/CGameplayAbilityTypes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/CPlayerCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/AbilityGauge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/GameplayWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/RenderActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/RenderActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/SkeletalMeshRenderWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/SkeletalMeshRenderWidget.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,41 +59,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "husteve07"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;husteve07&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/husteve07/Crunch.git",
-    "accountId": "e5bc6b62-e6e0-4a00-941e-b9676afb763a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/husteve07/Crunch.git&quot;,
+    &quot;accountId&quot;: &quot;e5bc6b62-e6e0-4a00-941e-b9676afb763a&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
-  <component name="ProjectId" id="3FhjcvWDct4tzOXYfPMsiLJrSlQ" />
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3FpwCpOe4g2G46Dw2yW2iwO4Hn8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Uproject.Crunch.executor": "Run",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Uproject.Crunch.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Crunch" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -165,12 +172,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7ca81a70-4d64-4946-bd85-3c0eca52885e" name="Changes" comment="" />
-      <created>1782534279912</created>
+      <changelist id="bc996a13-437e-4498-8d2b-04bd5f214b4c" name="Changes" comment="" />
+      <created>1782785195618</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1782534279912</updated>
-      <workItem from="1782534282178" duration="599000" />
+      <updated>1782785195618</updated>
+      <workItem from="1782785196676" duration="919000" />
+      <workItem from="1782804686528" duration="1450000" />
     </task>
     <servers />
   </component>
