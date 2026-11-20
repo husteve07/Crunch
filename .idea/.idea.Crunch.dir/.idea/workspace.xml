@@ -122,11 +122,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Add the Waiting widget and show it during logging in">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Added Create Lobby widget">
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +150,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -26217,7 +26215,7 @@
       <workItem from="1795077185232" duration="150000" />
       <workItem from="1795144751517" duration="2020000" />
       <workItem from="1795147304699" duration="3636000" />
-      <workItem from="1795153227129" duration="5515000" />
+      <workItem from="1795153227129" duration="6296000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26299,7 +26297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795164360149</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Added Create Lobby widget">
+      <option name="closed" value="true" />
+      <created>1795165732640</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1795165732640</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26319,6 +26325,7 @@
     <MESSAGE value="-setup login button" />
     <MESSAGE value="- Login functionality completed" />
     <MESSAGE value="- Add the Waiting widget and show it during logging in" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add the Waiting widget and show it during logging in" />
+    <MESSAGE value="- Added Create Lobby widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added Create Lobby widget" />
   </component>
 </project>
