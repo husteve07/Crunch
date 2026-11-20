@@ -33,6 +33,13 @@ private:
 
 	FDelegateHandle LoggingInDelegateHandle;
 
+	/*************************************/
+	/* Client Session Creation and Search */
+	/*************************************/
+public:
+	void RequestCreateAndJoinSession(const FName& NewSessionName);
+	void CancelSessionCreation();
+	
 	/****************************************/
 	/*				session Server			*/
 	/****************************************/
