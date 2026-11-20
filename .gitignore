@@ -72,3 +72,6 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Default engine init file since now it contains secrets
+Config/DefaultEngine.ini
