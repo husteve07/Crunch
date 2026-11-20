@@ -122,9 +122,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="">
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Oops forgot to add a buncha stuff to VCS&#10;- CLI Parsing">
+      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Network/CGameSession.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Network/CGameSession.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/LobbyGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/LobbyGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Network/CNetStatics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Network/CNetStatics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Network/CNetStatics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Network/CNetStatics.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,9 +160,12 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://N:/UE_proj/Crunch/Crunch.uproject" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Crunch.Build.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/StormCore.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameMode.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameMode.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/LobbyGameMode.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Network/CNetStatics.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CrunchServer.Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -26212,7 +26224,7 @@
       <workItem from="1794995270933" duration="1283000" />
       <workItem from="1795077185232" duration="150000" />
       <workItem from="1795144751517" duration="2020000" />
-      <workItem from="1795147304699" duration="1034000" />
+      <workItem from="1795147304699" duration="3636000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26254,7 +26266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795147187912</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Oops forgot to add a buncha stuff to VCS&#10;- CLI Parsing">
+      <option name="closed" value="true" />
+      <created>1795148566657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1795148566657</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26269,6 +26289,7 @@
     <MESSAGE value="- Build from source" />
     <MESSAGE value="- setup EOS" />
     <MESSAGE value="update to gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to gitignore file" />
+    <MESSAGE value="- Oops forgot to add a buncha stuff to VCS&#10;- CLI Parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Oops forgot to add a buncha stuff to VCS&#10;- CLI Parsing" />
   </component>
 </project>
