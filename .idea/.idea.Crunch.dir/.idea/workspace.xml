@@ -122,16 +122,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Configured Epic online subsystem for client server connection">
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/MainMenuGameMode.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/MainMenuGameMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/MainMenuPlayerController.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Player/MainMenuPlayerController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.h" afterDir="false" />
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="-setup login button">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Lobby/L_Lobby.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Lobby/L_Lobby.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26223,7 +26219,7 @@
       <workItem from="1795077185232" duration="150000" />
       <workItem from="1795144751517" duration="2020000" />
       <workItem from="1795147304699" duration="3636000" />
-      <workItem from="1795153227129" duration="3470000" />
+      <workItem from="1795153227129" duration="4273000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26281,7 +26277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795153293530</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-setup login button">
+      <option name="closed" value="true" />
+      <created>1795162845703</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1795162845703</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26298,6 +26302,7 @@
     <MESSAGE value="update to gitignore file" />
     <MESSAGE value="- Oops forgot to add a buncha stuff to VCS&#10;- CLI Parsing" />
     <MESSAGE value="- Configured Epic online subsystem for client server connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Configured Epic online subsystem for client server connection" />
+    <MESSAGE value="-setup login button" />
+    <option name="LAST_COMMIT_MESSAGE" value="-setup login button" />
   </component>
 </project>
