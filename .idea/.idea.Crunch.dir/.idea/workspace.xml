@@ -122,7 +122,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- configure character &amp; teamId based on player selection" />
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,8 +150,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameMode.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameMode.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CrunchServer.Target.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -26180,7 +26182,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -26197,7 +26202,8 @@
       <workItem from="1782974232266" duration="1000" />
       <workItem from="1783062630904" duration="1394000" />
       <workItem from="1788141313372" duration="1066000" />
-      <workItem from="1794995270933" duration="324000" />
+      <workItem from="1794995270933" duration="1283000" />
+      <workItem from="1795077185232" duration="150000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26207,7 +26213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794995586137</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- built from source">
+      <option name="closed" value="true" />
+      <created>1794996580707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1794996580707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26218,6 +26232,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="- configure character &amp; teamId based on player selection" />
-    <option name="LAST_COMMIT_MESSAGE" value="- configure character &amp; teamId based on player selection" />
+    <MESSAGE value="- built from source" />
+    <option name="LAST_COMMIT_MESSAGE" value="- built from source" />
   </component>
 </project>

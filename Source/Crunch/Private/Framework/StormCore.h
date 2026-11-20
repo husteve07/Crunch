@@ -34,8 +34,9 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+#if WITH_EDITOR
 	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
 private:
 	UPROPERTY(EditDefaultsOnly, Category = "Move")
 	UAnimMontage* ExpandMontage;
