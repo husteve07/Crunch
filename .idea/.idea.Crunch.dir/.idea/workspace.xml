@@ -122,17 +122,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Build from source">
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crunch.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Crunch.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Crunch.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
@@ -26212,7 +26211,8 @@
       <workItem from="1788141313372" duration="1066000" />
       <workItem from="1794995270933" duration="1283000" />
       <workItem from="1795077185232" duration="150000" />
-      <workItem from="1795144751517" duration="1748000" />
+      <workItem from="1795144751517" duration="2020000" />
+      <workItem from="1795147304699" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26238,7 +26238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1795145028707</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- setup EOS">
+      <option name="closed" value="true" />
+      <created>1795147029376</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1795147029376</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update to gitignore file">
+      <option name="closed" value="true" />
+      <created>1795147187912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1795147187912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26251,6 +26267,8 @@
     <MESSAGE value="- configure character &amp; teamId based on player selection" />
     <MESSAGE value="- built from source" />
     <MESSAGE value="- Build from source" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Build from source" />
+    <MESSAGE value="- setup EOS" />
+    <MESSAGE value="update to gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to gitignore file" />
   </component>
 </project>
