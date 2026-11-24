@@ -122,10 +122,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Configure and Get the coordinator url">
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +152,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -26218,7 +26219,8 @@
       <workItem from="1795077185232" duration="150000" />
       <workItem from="1795144751517" duration="2020000" />
       <workItem from="1795147304699" duration="3636000" />
-      <workItem from="1795153227129" duration="6616000" />
+      <workItem from="1795153227129" duration="8537000" />
+      <workItem from="1795486341897" duration="291000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26316,7 +26318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795165949926</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Compose and send Session Creation Request">
+      <option name="closed" value="true" />
+      <created>1795166230228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1795166230228</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26338,6 +26348,7 @@
     <MESSAGE value="- Add the Waiting widget and show it during logging in" />
     <MESSAGE value="- Added Create Lobby widget" />
     <MESSAGE value="- Configure and Get the coordinator url" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Configure and Get the coordinator url" />
+    <MESSAGE value="Compose and send Session Creation Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compose and send Session Creation Request" />
   </component>
 </project>
