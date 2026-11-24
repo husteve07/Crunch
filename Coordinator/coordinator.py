@@ -26,7 +26,7 @@ def CreateSeverLocalTest(sessionName, sessionSearchId):
 
 @app.route('/Sessions', methods=['POST'])
 def CreateSever():
-    print(dict(request.json))
+    print(dict(request.headers))
 
     sessionName = request.get_json().get(SESSION_NAME_KEY)
     sessionSearchId = request.get_json().get(SESSION_SEARCH_ID_KEY)

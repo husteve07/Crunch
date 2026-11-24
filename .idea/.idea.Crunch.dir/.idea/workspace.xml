@@ -122,11 +122,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Searching for created session">
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Search for created session">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coordinator/coordinator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Coordinator/coordinator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +154,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CrunchServer.Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -26215,7 +26215,7 @@
       <workItem from="1795144751517" duration="2020000" />
       <workItem from="1795147304699" duration="3636000" />
       <workItem from="1795153227129" duration="8537000" />
-      <workItem from="1795486341897" duration="2631000" />
+      <workItem from="1795486341897" duration="3689000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26345,7 +26345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795491399242</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="- Search for created session">
+      <option name="closed" value="true" />
+      <created>1795492495489</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1795492495489</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26371,6 +26379,7 @@
     <MESSAGE value="- flask Coordinator HTTP server setup" />
     <MESSAGE value="- Using Coordinatitor to Launch and instancce of the server upon request" />
     <MESSAGE value="- Searching for created session" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Searching for created session" />
+    <MESSAGE value="- Search for created session" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Search for created session" />
   </component>
 </project>
