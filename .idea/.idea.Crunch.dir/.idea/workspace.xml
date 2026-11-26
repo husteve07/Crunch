@@ -122,13 +122,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- created and composed the session entry widget class">
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Popoulate the session list in main menu">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/MainMenu/MainMenu_WBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/MainMenu/MainMenu_WBP.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Framework/CGameInstance.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/MainMenuWidget.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +154,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.h" root0="SKIP_HIGHLIGHTING" />
@@ -26219,7 +26219,7 @@
       <workItem from="1795147304699" duration="3636000" />
       <workItem from="1795153227129" duration="8537000" />
       <workItem from="1795486341897" duration="4472000" />
-      <workItem from="1795640946232" duration="6596000" />
+      <workItem from="1795640946232" duration="8081000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26389,7 +26389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795652890759</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="- Popoulate the session list in main menu">
+      <option name="closed" value="true" />
+      <created>1795656168961</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1795656168961</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26420,6 +26428,7 @@
     <MESSAGE value="- COnnect to the sesion server through serach result" />
     <MESSAGE value="- Implement Global Session Search" />
     <MESSAGE value="- created and composed the session entry widget class" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created and composed the session entry widget class" />
+    <MESSAGE value="- Popoulate the session list in main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Popoulate the session list in main menu" />
   </component>
 </project>
