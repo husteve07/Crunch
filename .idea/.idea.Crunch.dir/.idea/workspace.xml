@@ -122,7 +122,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- COnnect to the sesion server through serach result">
+    <list default="true" id="b0436f67-0a8b-4c52-8c2a-b61b9a2b10f6" name="Changes" comment="- Implement Global Session Search">
+      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/SessionEntryWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Crunch/Private/Widgets/SessionEntryWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Crunch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
     </list>
@@ -152,6 +154,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://N:/UE_proj/Crunch/Source/Crunch/Private/Framework/CGameInstance.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CrunchServer.Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -26213,7 +26217,7 @@
       <workItem from="1795147304699" duration="3636000" />
       <workItem from="1795153227129" duration="8537000" />
       <workItem from="1795486341897" duration="4472000" />
-      <workItem from="1795640946232" duration="1928000" />
+      <workItem from="1795640946232" duration="3177000" />
     </task>
     <task id="LOCAL-00001" summary="- configure character &amp; teamId based on player selection">
       <option name="closed" value="true" />
@@ -26367,7 +26371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795643182746</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- Implement Global Session Search">
+      <option name="closed" value="true" />
+      <created>1795649615164</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1795649615164</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -26396,6 +26408,7 @@
     <MESSAGE value="- Search for created session" />
     <MESSAGE value="- Stop session search and retrieve session name and port" />
     <MESSAGE value="- COnnect to the sesion server through serach result" />
-    <option name="LAST_COMMIT_MESSAGE" value="- COnnect to the sesion server through serach result" />
+    <MESSAGE value="- Implement Global Session Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Implement Global Session Search" />
   </component>
 </project>
